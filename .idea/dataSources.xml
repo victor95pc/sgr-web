@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2232883834">
+    <data-source source="LOCAL" name="Rails SGR: development" uuid="4fa240c9-b3e9-4ca6-8d0e-808e5ed7361c">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/sgr_development</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9bdf98df99dfdbdfdddfcf</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails SGR: test" uuid="f2366e13-a3ba-4ed6-8b55-65709f35d4c7">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/sgr_test</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9bdf98df99dfdbdfdddfcf</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails SGR: production" uuid="1b395d8f-c658-4ee9-b87b-94e0b4189047">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/sgr_production</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9bdf98df99dfdbdfdddfcf</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
