@@ -7,12 +7,15 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+#Configuracoes
+Configuracao.create valor_kg: 12.50
+
 #Produtos
 coca = Produto.create numero_codigo: 00000001, nome: 'Coca-Cola(Lata)', valor: 4, descricao: 'Coco-cola lata para beber'
 pepsi = Produto.create numero_codigo: 00000002, nome: 'Pepsi(Lata)', valor: 3.9, descricao: 'Lata de Pepsi'
 guaracamp = Produto.create numero_codigo: 00000003, nome: 'GuaraCamp', valor: 2.5, descricao: 'Guaracamp'
 
-victor = Funcionario.create nome: 'Victor Palomo', cargo: 'Dono do Mundo', salario: '0'
+victor = Funcionario.create nome: 'Victor Palomo', cargo: 'Dono do Mundo', salario: '1'
 Falta.create funcionario_id: victor.id, motivo: 'O mundo não estava pronto!'
 
 cartao_do_victor = Cartao.create numero_cartao: '000000000'

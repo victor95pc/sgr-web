@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140107165340) do
+ActiveRecord::Schema.define(version: 20140108135529) do
 
   create_table "cartoes", force: true do |t|
     t.integer  "numero_cartao"
@@ -33,6 +33,12 @@ ActiveRecord::Schema.define(version: 20140107165340) do
     t.decimal  "peso",       precision: 10, scale: 2
     t.decimal  "valor",      precision: 10, scale: 2
     t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "configuracoes", force: true do |t|
+    t.decimal  "valor_kg",   precision: 10, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,18 @@
+coca:
+  numero_codigo: 00000001
+  nome: 'Coca-Cola(Lata)'
+  valor: 4
+  descricao: 'Coco-cola lata para beber'
+
+pepsi:
+  numero_codigo: 00000002
+  nome: 'Pepsi(Lata)'
+  valor: 3.9
+  descricao: 'Lata de Pepsi'
+
+guaracamp:
+  numero_codigo: 00000003
+  nome: 'GuaraCamp'
+  valor: 2.5
+  descricao: 'Guaracamp'
+

@@ -37,7 +37,7 @@ end
 
 gem 'devise', '3.0.0.rc'
 
-gem 'factory_girl_rails'
+gem 'validates_timeliness'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
