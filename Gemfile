@@ -35,9 +35,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'devise', '3.0.0.rc'
+gem 'devise', '3.0.0rc'
 
 gem 'validates_timeliness'
+
+gem 'jquery-ui-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
