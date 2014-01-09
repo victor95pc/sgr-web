@@ -7,14 +7,7 @@ class ComandaTest < ActiveSupport::TestCase
     comanda.cartao = Cartao.find_by_numero_cartao 1111111111
     assert comanda.save
 
-    comanda.peso = nil
-    assert_not comanda.save
-
-    comanda.valor = nil
-    assert_not comanda.save
-
-    comanda.status = nil
-    assert_not comanda.save
+    exijir_presenca comanda, :status, :valor, :peso
   end
 
   test 'Mudar Status da comanda' do

@@ -8,13 +8,6 @@ class ProdutoPagoTest < ActiveSupport::TestCase
 
     assert produto_pago.save
 
-    produto_pago.produto = nil
-    assert_not produto_pago.save
-
-    produto_pago.quantidade = nil
-    assert_not produto_pago.save
-
-    produto_pago.comanda = nil
-    assert_not produto_pago.save
+    exijir_presenca produto_pago, :produto_id, :quantidade, :comanda_id
   end
 end

@@ -12,4 +12,23 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def exijir_presenca(model, *campos)
+    validar(model, *campos) { assert_not model.save }
+  end
+
+  def nao_exijir_presenca(model, *campos)
+    validar(model, *campos) { assert model.save }
+  end
+
+  def validar(model, *campos)
+    campos.each do |campo|
+      model[campo] = nil
+      campos.each do |campo|
+        model[campo] = 123 unless model[campo] == nil
+        yield
+      end
+
+    end
+  end
 end
+

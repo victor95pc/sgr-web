@@ -6,8 +6,7 @@ class CartaoTest < ActiveSupport::TestCase
     cartao = Cartao.new numero_cartao: 1234567899
     assert cartao.save
 
-    cartao.numero_cartao = nil
-    assert_not cartao.save
+    exijir_presenca cartao, :numero_cartao
 
     cartao.numero_cartao = 12345678
     assert_not cartao.save

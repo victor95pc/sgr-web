@@ -6,13 +6,6 @@ class FuncionarioTest < ActiveSupport::TestCase
 
     assert funcionario.save
 
-    funcionario.nome = nil
-    assert_not funcionario.save
-
-    funcionario.cargo = nil
-    assert_not funcionario.save
-
-    funcionario.salario = nil
-    assert_not funcionario.save
+    exijir_presenca funcionario, :nome, :cargo, :salario
   end
 end

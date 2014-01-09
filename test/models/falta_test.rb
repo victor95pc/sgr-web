@@ -8,10 +8,6 @@ class FaltaTest < ActiveSupport::TestCase
 
     assert falta.save
 
-    falta.motivo = nil
-    assert falta.save
-
-    falta.data_falta = nil
-    assert_not falta.save
+    exijir_presenca falta, :data_falta, :motivo
   end
 end
