@@ -18,8 +18,10 @@ guaracamp = Produto.create numero_codigo: 00000003, nome: 'GuaraCamp', valor: 2.
 victor = Funcionario.create nome: 'Victor Palomo', cargo: 'Dono do Mundo', salario: '1'
 Falta.create funcionario_id: victor.id, motivo: 'O mundo não estava pronto!'
 
-cartao_do_victor = Cartao.create numero_cartao: '000000000'
-victor = Cliente.create nome: 'Victor', cartao_id: cartao_do_victor.id, telefone: 74952926, cep: 23550370
+cartao_do_victor = Cartao.create numero_cartao: '0000000000'
+victor = Cliente.new nome: 'Victor', telefone: 74952926, cep: 23550370
+victor.cartao = cartao_do_victor
+victor.save!
 comanda_victor = Comanda.create cartao_id: cartao_do_victor.id, peso: 1.234847, valor: 150.4795, status: 2
 
 ProdutoPago.create produto_id: coca.id, comanda_id: comanda_victor.id, quantidade: 4
