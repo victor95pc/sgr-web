@@ -1,0 +1,10 @@
+Trying to add new property 'svn:ignore'
+but the property already exists.
+<<<<<<< (local property value)
+.goutputstream-N8864W
+=======
+.goutputstream-BDFL5W
+.goutputstream-OSSC5W
+.goutputstream-WS6H5W
+.goutputstream-Z9264W
+>>>>>>> (incoming property value)

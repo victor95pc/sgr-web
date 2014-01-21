@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery.ui.all
+//= require jquery-ui-1.9.2.custom.min
+//= require jqrid/js/jquery.jqGrid.min
+//= require jqrid/js/i18n/grid.locale-pt-br
