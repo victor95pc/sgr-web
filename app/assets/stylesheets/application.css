@@ -12,5 +12,6 @@
  *= require jquery.ui.all
  *= require pepper-grinder/jquery-ui-1.9.2.custom.min
  *= require jqrid/css/ui.jqgrid
+ *= require jqplot/jquery.jqplot
  *= require_tree .
  */

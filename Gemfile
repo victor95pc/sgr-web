@@ -28,11 +28,17 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 1.2bund'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'meta_request'
+  gem 'better_errors'
+  gem 'pry'
 end
 
 gem 'devise', '3.0.0rc'
@@ -40,6 +46,7 @@ gem 'devise', '3.0.0rc'
 gem 'validates_timeliness'
 
 gem 'jquery-ui-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
