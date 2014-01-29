@@ -15,3 +15,197 @@
  *= require jqplot/jquery.jqplot
  *= require_tree .
  */
+
+#menu_superior a:link {
+    text-decoration: none
+}
+
+#menu_superior a:visited {
+    text-decoration: none
+}
+
+#menu_superior a:active {
+    text-decoration: none
+}
+
+#menu_superior a:hover {
+    text-decoration: none
+}
+
+#menu_superior a.ativo {
+    background-color: #9F4D11
+}
+
+#menu_lateral a:link {
+    text-decoration: none
+}
+
+#menu_lateral a:visited {
+    text-decoration: none
+}
+
+#menu_lateral a:active {
+    text-decoration: none
+}
+
+#menu_lateral a:hover {
+    text-decoration: none
+}
+
+#container {
+    color: white;
+    font-family: sans-serif;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    padding-top: 15px;
+    background-color: greenyellow;
+    width: 930px;
+    height: 480px;
+    margin: 0 auto;
+    background: #f4f4f4; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #f4f4f4 0%, #d2d3d5 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f4f4f4), color-stop(100%, #d2d3d5)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #f4f4f4 0%, #d2d3d5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #f4f4f4 0%, #d2d3d5 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #f4f4f4 0%, #d2d3d5 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, #f4f4f4 0%, #d2d3d5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#d2d3d5', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#menu_superior {
+    padding-top: 60px;
+    height: 40px;
+    margin: 0;
+}
+
+#menu_superior a, #menu_superior #sair {
+
+    color: white;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #f58634;
+    line-height: 40px;
+    list-style: none;
+    float: left;
+    padding: 0 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#logoSGR {
+    float: left;
+    width: 70px;
+    height: 90px;
+    margin: 0 5px 0 15px;
+}
+
+#menu_superior a:hover {
+    background-color: #cd5e0c;
+}
+
+#menu_superior #sair {
+
+    margin-right: 0;
+    -webkit-border-radius: 15px 0px 0px 0px;
+    border-radius: 15px 0px 0px 0px;
+    float: right;
+}
+
+#menu_superior #mensagem {
+
+    display: none;
+}
+
+#menu_lateral {
+    float: left;
+    width: 100px;
+}
+
+#menu_lateral {
+
+    padding-left: 0;
+    padding-right: 8px;
+    text-align: center;
+}
+
+#menu_lateral ul li {
+    color: white;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #f58634;
+    list-style: none;
+    margin: 28px 0;
+    line-height: 30px;
+}
+
+#menu_lateral ul li:hover {
+    background-color: #cd5e0c;
+}
+
+#content {
+    float: left;
+    width: 830px;
+    height: 350px;
+    background-color: white
+}
+
+#footer {
+    text-align: center;
+    -webkit-border-radius: 0 0 25px 25px;
+    border-radius: 0 0 25px 25px;
+    background-color: #f58634;
+    float: left;
+    margin: 0;
+    width: 930px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#grafico {
+    margin: 10px auto;
+}
+
+#configuracao_comanda {
+    /*float: left;*/
+    color: #000;
+    margin: 15px auto 40px auto;
+    width: 260px;
+}
+
+#configuracao_comanda #valor {
+    /*width: 70px;*/
+}
+
+#content #nos {
+    margin: 10px auto;
+    text-align: center;
+    color: #000;
+    width: inherit;
+    height: inherit;
+}
+
+#content ul {
+    text-align: center;
+    padding: 0px;
+}
+
+#content ul li {
+    margin: 10px 0;
+}
+
+#content ul li p {
+    font-size: 30px;
+}
+
+#content ul li p h2 {
+    font-size: 25px;
+}
+
+#content #nos img {
+    width: 40px;
+
+}
