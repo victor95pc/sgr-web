@@ -12,6 +12,8 @@ class ApplicationController < ActionController::Base
     config_params[:save] ||= true
     config_params[:destroy] ||= true
     config_params[:id] ||= :id
+    config_params[:created_at] ||= false
+    config_params[:updated_at] ||= false
 
     oper = params[:oper]
     id = params[:id]
@@ -115,11 +117,13 @@ class ApplicationController < ActionController::Base
           columns.each do |column|
             resposta[:rows][id][:cell][column] = model_obj[column]
           end
+          resposta[:rows][id][:cell][:created_at] = model_obj[:created_at] if config_params[:created_at]
+          resposta[:rows][id][:cell][:updated_at] = model_obj[:updated_at] if config_params[:updated_at]
 
           yield oper, resposta[:rows][id][:cell], model_obj if block_given? and model.present?
         end
 
-
+        binding.pry
         render json: resposta, status: :ok
     end
   end
