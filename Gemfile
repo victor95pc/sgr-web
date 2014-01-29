@@ -39,6 +39,7 @@ group :development, :test do
   gem 'meta_request'
   gem 'better_errors'
   gem 'pry'
+  gem 'binding_of_caller'
 end
 
 gem 'devise', '3.0.0rc'
