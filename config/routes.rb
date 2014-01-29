@@ -3,7 +3,19 @@ SGR::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  #root 'clientes#cadastros'
+
+  get 'clientes' => redirect('clientes/cadastros')
+  get 'clientes/ajax_cadastros_grid' => 'clientes#ajax_cadastros_grid'
+  post 'clientes/ajax_cadastros_grid' => 'clientes#ajax_cadastros_grid'
+  get 'clientes/cadastros' => 'clientes#cadastros'
+  get 'clientes/frequencia' => 'clientes#frequencia'
+  get 'clientes/ajax_grafico_frequencia' => 'clientes#ajax_grafico_frequencia'
+
+  get 'funcionarios' => redirect('funcionarios/cadastros')
+  get 'funcionarios/cadastros' => 'funcionarios#cadastros'
+  get 'funcionarios/ajax_cadastros_grid' => 'funcionarios#ajax_cadastros_grid'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
