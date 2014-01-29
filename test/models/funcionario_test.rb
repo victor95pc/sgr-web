@@ -6,6 +6,6 @@ class FuncionarioTest < ActiveSupport::TestCase
 
     assert funcionario.save
 
-    exijir_presenca funcionario, :nome, :cargo, :salario
+    required funcionario, :nome, :cargo, :salario
   end
 end

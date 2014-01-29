@@ -6,8 +6,8 @@ class DespesaTest < ActiveSupport::TestCase
     despesa = Despesa.new nome: 'Depesa Inicial', valor: 12, descricao: 'Mundo da Pratica'
     assert despesa.save
 
-    nao_exijir_presenca despesa, :descricao
+    not_required despesa, :descricao
 
-    exijir_presenca despesa, :nome, :valor
+    required despesa, :nome, :valor
   end
 end

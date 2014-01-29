@@ -8,9 +8,9 @@ class ClienteTest < ActiveSupport::TestCase
 
     assert cliente.save
 
-    nao_exijir_presenca cliente, :telefone, :cep
+    not_required cliente, :telefone, :cep
 
-    exijir_presenca cliente, :nome, :cartao_id
+    required cliente, :nome, :cartao_id
 
     cliente = Cliente.new nome: 'Marcos', telefone: 33158647, cep: 23008350
     cliente.cartao = Cartao.find_by_numero_cartao 1111111111
@@ -24,6 +24,6 @@ class ClienteTest < ActiveSupport::TestCase
     assert cliente.save
 
     cliente.nome = 'Victor'
-    exijir_presenca cliente, :nome
+    required cliente, :nome
   end
 end

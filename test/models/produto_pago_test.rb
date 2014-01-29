@@ -8,6 +8,6 @@ class ProdutoPagoTest < ActiveSupport::TestCase
 
     assert produto_pago.save
 
-    exijir_presenca produto_pago, :produto_id, :quantidade, :comanda_id
+    required produto_pago, :produto_id, :quantidade, :comanda_id
   end
 end
