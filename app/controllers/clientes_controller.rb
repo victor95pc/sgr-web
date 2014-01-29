@@ -6,7 +6,7 @@ class ClientesController < ApplicationController
   end
 
   def ajax_cadastros_grid
-    palom_grid(Cliente, {}, :nome, :telefone, :cep) do |oper, custons, cliente|
+    palom_grid(Cliente, {created_at: true}, :nome, :telefone, :cep) do |oper, custons, cliente|
       case oper
         when 'add'
           cliente.cartao = Cartao.find_by_numero_cartao params[:numero_cartao]
@@ -15,7 +15,6 @@ class ClientesController < ApplicationController
 
         when 'show'
           custons[:numero_cartao] = cliente.cartao.numero_cartao
-          custons[:created_at] = cliente.created_at
       end
     end
   end
