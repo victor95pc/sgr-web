@@ -125,6 +125,8 @@ class ApplicationController < ActionController::Base
 
         binding.pry
         render json: resposta, status: :ok
+      else
+        render inline: 'Opers not found check your javascript file', status: :not_found
     end
   end
 end
