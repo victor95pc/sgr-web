@@ -4,7 +4,7 @@ $ ->
   jQuery("#lista").jqGrid
     height: 279
     width: 830
-    url: "ajax_cadastros_grid"
+    url: "ajax_cadastros_grid?oper=show"
     datatype: "json"
     colNames: ["Nome do Funcionário", "Cargo", "Salario", "Data de Admição"]
     colModel: [
