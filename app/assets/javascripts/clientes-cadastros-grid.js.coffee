@@ -49,39 +49,21 @@ $ ->
     sortorder: "asc"
     loadonce: false
     caption: "Clientes"
-    onSelectRow: (id) ->
-      $("#lista").keydown (event) ->
-        if event.keyCode is 13
-          if id and id isnt lastsel2
-            jQuery("#lista").restoreRow lastsel2
-            jQuery("#lista").jqGrid "editRow", id, true, "", "", "", "", reload
-            lastsel2 = id
-
-
     editurl: "ajax_cadastros_grid"
 
-  jQuery("#lista").jqGrid("navGrid", "#lista_footer",
-    edit: true
-    add: true
-    del: true
-    reloadAfterSubmit: true
-  ).navButtonAdd "#pager",
-    caption: "Gerar Relatório"
-    buttonicon: "ui-icon-clipboard"
-    onClickButton: ->
-      alert "Adding Row"
+  jQuery("#lista").jqGrid "navGrid", "#lista_footer", {
+      edit: true
+      add: true
+      del: true
+      reloadAfterSubmit: true
+    },
+    {
+      errorTextFormat: (data) ->
+        'Erro ao cadastrar novo cliente' if data.status == 500
 
-    position: "last"
+    },
+    {
+      errorTextFormat: (data) ->
+        'Erro ao editar o cliente' if data.status == 500
 
-  jQuery("#lista").jqGrid "inlineNav", "#lista_footer",
-    edit: false
-    add: false
-    del: false
-    editParams:
-      keys: true
-      aftersavefunc: reload
-
-    addParams:
-      addRowParams:
-        keys: true
-        aftersavefunc: reload
+    }
