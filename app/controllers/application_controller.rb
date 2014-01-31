@@ -1,3 +1,4 @@
+#encoding: utf-8
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
@@ -67,7 +68,6 @@ class ApplicationController < ActionController::Base
         yield oper, nil, model_obj if block_given?
         if model.present?
           if model_obj.present?
-            binding.pry
             model_obj.destroy if config_params[:destroy]
             render nothing: true, status: :ok
           else
@@ -123,7 +123,6 @@ class ApplicationController < ActionController::Base
           yield oper, resposta[:rows][id][:cell], model_obj if block_given? and model.present?
         end
 
-        binding.pry
         render json: resposta, status: :ok
       else
         render inline: 'Opers not found check your javascript file', status: :not_found
