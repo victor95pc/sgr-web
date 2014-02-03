@@ -59,7 +59,6 @@ class ActiveSupport::TestCase
         case oper
           when 'add'
             #DELETE AND CONTINUE TESTING
-            binding.pry
             if column != columns.last
               get url, test_columns.merge({oper: 'del'})
               assert_response :ok, 'Operation: del, expect a ok inside grid'
