@@ -16,6 +16,10 @@ SGR::Application.routes.draw do
   get 'funcionarios/cadastros' => 'funcionarios#cadastros'
   get 'funcionarios/ajax_cadastros_grid' => 'funcionarios#ajax_cadastros_grid'
 
+  get 'financas' => redirect('financas/pagamentos_clientes')
+  get 'financas/pagamentos_clientes' => 'financas#pagamentos_clientes'
+  get 'financas/ajax_pagamentos_clientes_grid' => 'financas#ajax_pagamentos_clientes_grid'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
