@@ -4,8 +4,8 @@ $(document).on 'page:change', ->
   reload = (rowid, result) ->
     $("#lista").trigger "reloadGrid"
   jQuery("#lista").jqGrid
-    height: 279
-    width: 830
+    height: content_height
+    width: content_width
     url: "ajax_cadastros_grid?oper=show"
     datatype: "json"
     colNames: ["Nome do Cliente", "Telefone", "Cep", "Começo da Fidelidade", "Numero Cartão"]

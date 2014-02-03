@@ -24,3 +24,7 @@
 //= require jqplot/plugins/jqplot.categoryAxisRenderer.min
 //= require jqplot/plugins/jqplot.pointLabels.min
 //= require jqplot/plugins/jqplot.cursor.min
+
+//ALTERA O TAMANHO DE TODAS OS ELEMENTOS DENTRO DO CONTENT
+var content_width = 830;
+var content_height = 274;

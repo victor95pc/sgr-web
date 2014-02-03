@@ -20,3 +20,41 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#d2d3d5', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 
 }
+
+/*CODIGO QUE MODIFICA A MANEIRA QUE OS ELEMENTOS QUE USAM JQUERY APARECEM*/
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-left-radius: 0
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-top-right-radius: 0
+}
+
+.ui-widget-content {
+  border-width: 0
+}
+
+.ui-jqgrid .ui-jqgrid-bdiv {
+  overflow-x: hidden
+}
+

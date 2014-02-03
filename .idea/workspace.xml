@@ -1,84 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="Adicionado Jquery ui para a grid">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_painel.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/clientes/cadastros.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/funcionarios/cadastros.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/clientes.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/clientes.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/clientes_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/clientes_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/clientes_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/clientes_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/clientes/frequencia.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/funcionarios.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/funcionarios.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/funcionarios_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/funcionarios_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/funcionarios_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fundo.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.BezierCurveRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.barRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.blockRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.bubbleRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.canvasOverlay.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.canvasTextRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.categoryAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.ciParser.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.cursor.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.dateAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.donutRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.dragable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.enhancedLegendRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.funnelRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.highlighter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.json2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.logAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.mekkoAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.mekkoRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.meterGaugeRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.mobile.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.ohlcRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.pieRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.pointLabels.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.pyramidAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.pyramidGridRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.pyramidRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins/jqplot.trendline.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/jqplot/jquery.jqplot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/jquery.jqplot.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+    <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="Refatoração na interface do SGR e adicionado o botao 'Sair' e a faixa do footer">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SGR.iml" afterPath="$PROJECT_DIR$/.idea/SGR.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/cartao_test.rb" afterPath="$PROJECT_DIR$/test/models/cartao_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/cliente_test.rb" afterPath="$PROJECT_DIR$/test/models/cliente_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/clientes.yml" afterPath="$PROJECT_DIR$/test/fixtures/clientes.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/comanda_test.rb" afterPath="$PROJECT_DIR$/test/models/comanda_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/configuracao_test.rb" afterPath="$PROJECT_DIR$/test/models/configuracao_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/despesa_test.rb" afterPath="$PROJECT_DIR$/test/models/despesa_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/falta_test.rb" afterPath="$PROJECT_DIR$/test/models/falta_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/funcionario_test.rb" afterPath="$PROJECT_DIR$/test/models/funcionario_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/produto_pago_test.rb" afterPath="$PROJECT_DIR$/test/models/produto_pago_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/produto_test.rb" afterPath="$PROJECT_DIR$/test/models/produto_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/promocao_test.rb" afterPath="$PROJECT_DIR$/test/models/promocao_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SGR.iws" />
@@ -104,37 +37,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="clientes_controller_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/controllers/clientes_controller_test.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+            <state line="22" column="7" selection-start="626" selection-end="626" vertical-scroll-proportion="-14.666667" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clientes-cadastros.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.coffee">
+      <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="11" selection-start="349" selection-end="354" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="1674">
+            <state line="6" column="26" selection-start="165" selection-end="165" vertical-scroll-proportion="0.24713959" vertical-offset="0" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="funcionarios-cadastros.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="2" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1278">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="22" selection-start="644" selection-end="644" vertical-scroll-proportion="0.35846373" vertical-offset="0" max-vertical-offset="703">
+            <state line="29" column="24" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientes-frequencia.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1044">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clientes_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/clientes_controller.rb">
+      <file leaf-file-name="funcionarios_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/funcionarios_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="5" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
+            <state line="7" column="10" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_menu_superior.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="19" selection-start="226" selection-end="226" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="234">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientes-cadastros.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="149" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="painel.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="0" selection-start="2197" selection-end="2197" vertical-scroll-proportion="-37.851852" vertical-offset="58" max-vertical-offset="1188">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="117" column="20" selection-start="3110" selection-end="3110" vertical-scroll-proportion="-12.3" vertical-offset="1737" max-vertical-offset="3942">
               <folding />
             </state>
           </provider>
@@ -153,13 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20140108135529_create_configuracoes.rb" />
-        <option value="$PROJECT_DIR$/app/models/comanda.rb" />
-        <option value="$PROJECT_DIR$/app/models/configuracao.rb" />
-        <option value="$PROJECT_DIR$/app/models/despesa.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/funcionarios.yml" />
-        <option value="$PROJECT_DIR$/app/models/funcionario.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/produtos.yml" />
         <option value="$PROJECT_DIR$/test/fixtures/comandas.yml" />
         <option value="$PROJECT_DIR$/app/models/produto.rb" />
         <option value="$PROJECT_DIR$/app/models/produto_pago.rb" />
@@ -176,34 +158,41 @@
         <option value="$PROJECT_DIR$/app/models/promocao.rb" />
         <option value="$PROJECT_DIR$/test/models/promocao_test.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/fundo.css" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/_painel.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140107165119_create_cartoes.rb" />
         <option value="$PROJECT_DIR$/app/models/cartao.rb" />
         <option value="$PROJECT_DIR$/app/models/cliente.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/clientes.yml" />
         <option value="$PROJECT_DIR$/app/helpers/clientes_helper.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/clientes/frequencia.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/clientes.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee" />
-        <option value="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/clientes/cadastros.html.erb" />
         <option value="$PROJECT_DIR$/../Caelum_Rails/vota_prato/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/../Caelum_Rails/vota_prato/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.coffee" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/test/models/cliente_test.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/clientes_controller.rb" />
-        <option value="$PROJECT_DIR$/test/test_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/test/controllers/clientes_controller_test.rb" />
+        <option value="$PROJECT_DIR$/app/views/clientes/cadastros.html.erb" />
+        <option value="$PROJECT_DIR$/../Caelum_Rails/vota_prato/app/controllers/qualificacoes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/menu_superior.erb" />
+        <option value="$PROJECT_DIR$/app/views/funcionarios/cadastros.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_menu_lateral.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/clientes.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/funcionarios.css.scss" />
+        <option value="$PROJECT_DIR$/app/controllers/clientes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/test/test_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -306,24 +295,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SGR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SGR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -338,7 +309,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,7 +331,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funcionarios" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,11 +353,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clientes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,11 +480,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
+      <recent name="$PROJECT_DIR$/app/views/layouts" />
       <recent name="$PROJECT_DIR$/app/views/funcionarios" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
       <recent name="$PROJECT_DIR$/vendor/assets/javascripts/jqplot" />
-      <recent name="$PROJECT_DIR$/vendor/assets/javascripts/jqplot/plugins" />
-      <recent name="$PROJECT_DIR$/vendor/assets/stylesheets/jqplot" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: SGR">
@@ -703,10 +694,46 @@
       <created>1390311683548</created>
       <updated>1390311683548</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Data do grafico_frequencia formatado para o Jqplot entender">
+      <created>1391431102724</created>
+      <updated>1391431102724</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Reorganizado sistema de geração de menus, e implementado o menu lateral">
+      <created>1391432461344</created>
+      <updated>1391432461344</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Alteração na ordem de chamada do TurboLinks e remoção do binding.pry que estava atrapalhando o test_helper">
+      <created>1391433917118</created>
+      <updated>1391433917118</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Alterações no forma de carregamento da JQrid e Data de Admição formatada devidamente">
+      <created>1391433990331</created>
+      <updated>1391433990331</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Refatorando o grafico da frequencia">
+      <created>1391434048482</created>
+      <updated>1391434048482</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Solucionados problemas com a indentação">
+      <created>1391434096975</created>
+      <updated>1391434096975</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adicionado mensagem de erro ao nao conseguir deletar um cliente da base de dados">
+      <created>1391434137959</created>
+      <updated>1391434137959</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implementado sistema de geração de grid palom grid">
+      <created>1391434185465</created>
+      <updated>1391434185465</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Alteração feitas nas view para suportar as grids">
+      <created>1391434290815</created>
+      <updated>1391434290815</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -731,24 +758,24 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28274968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28793773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28664073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2830018" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26491863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -766,10 +793,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28343666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28842676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -781,6 +808,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
@@ -790,7 +818,17 @@
     <MESSAGE value="Modificações feitas na lista de Gems" />
     <MESSAGE value="Adicionado Jquery ui para a grid" />
     <MESSAGE value="Alteração no campo numero_cartao de int para string" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alteração no campo numero_cartao de int para string" />
+    <MESSAGE value="Data do grafico_frequencia formatado para o Jqplot entender" />
+    <MESSAGE value="Reorganizado sistema de geração de menus, e implementado o menu lateral" />
+    <MESSAGE value="Alteração na ordem de chamada do TurboLinks e remoção do binding.pry que estava atrapalhando o test_helper" />
+    <MESSAGE value="Alterações no forma de carregamento da JQrid e Data de Admição formatada devidamente" />
+    <MESSAGE value="Refatorando o grafico da frequencia" />
+    <MESSAGE value="Solucionados problemas com a indentação" />
+    <MESSAGE value="Adicionado mensagem de erro ao nao conseguir deletar um cliente da base de dados" />
+    <MESSAGE value="Implementado sistema de geração de grid palom grid" />
+    <MESSAGE value="Alteração feitas nas view para suportar as grids" />
+    <MESSAGE value="Refatoração na interface do SGR e adicionado o botao 'Sair' e a faixa do footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatoração na interface do SGR e adicionado o botao 'Sair' e a faixa do footer" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -798,36 +836,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Caelum_Rails/vota_prato/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="302" selection-end="302" vertical-scroll-proportion="0.27197802" vertical-offset="0" max-vertical-offset="728" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/fundo.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="486" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_painel.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/configuracao.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="691" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/despesa.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="691" />
@@ -850,39 +858,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.6592179" vertical-offset="472" max-vertical-offset="1188" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Caelum_Rails/vota_prato/app/controllers/qualificacoes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3072546" vertical-offset="216" max-vertical-offset="1746" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/clientes_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.024291499" vertical-offset="0" max-vertical-offset="741" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p484@SGR/gems/railties-4.0.1/lib/rails/initializable.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3489012" vertical-offset="982" max-vertical-offset="1710" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="493" selection-end="493" vertical-scroll-proportion="0.45266274" vertical-offset="0" max-vertical-offset="676" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clientes/frequencia.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/clientes.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="162" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/jqplot/jquery.jqplot.css">
@@ -900,29 +878,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="691" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1116" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1278" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140107165213_create_funcionarios.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/funcionarios/cadastros.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="56" selection-end="56" vertical-scroll-proportion="0.028169014" vertical-offset="0" max-vertical-offset="639" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/funcionarios_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="234" selection-end="234" vertical-scroll-proportion="0.21862349" vertical-offset="0" max-vertical-offset="741" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/jqplot/jquery.jqplot.min.js">
@@ -945,16 +903,6 @@
         <state line="12" column="18" selection-start="563" selection-end="563" vertical-scroll-proportion="0.3072546" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clientes/cadastros.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Caelum_Rails/vota_prato/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="678" />
@@ -972,9 +920,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
@@ -1014,18 +960,9 @@
         <state line="3" column="23" selection-start="56" selection-end="56" vertical-scroll-proportion="0.075418994" vertical-offset="0" max-vertical-offset="716" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cliente.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="52" selection-end="52" vertical-scroll-proportion="0.05027933" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/models/cliente_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="312" selection-end="312" vertical-scroll-proportion="0.30167598" vertical-offset="0" max-vertical-offset="716">
-          <folding />
-        </state>
+        <state line="12" column="10" selection-start="312" selection-end="312" vertical-scroll-proportion="0.30167598" vertical-offset="0" max-vertical-offset="716" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -1035,44 +972,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/clientes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/../Caelum_Rails/vota_prato/app/controllers/qualificacoes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
+        <state line="83" column="19" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.79160637" vertical-offset="947" max-vertical-offset="1746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cliente.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="16" selection-start="52" selection-end="52" vertical-scroll-proportion="0.05209841" vertical-offset="0" max-vertical-offset="691" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/clientes.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/fundo.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.6927454" vertical-offset="1619" max-vertical-offset="2322">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="432">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/funcionarios.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="997" selection-end="997" vertical-scroll-proportion="0.57005495" vertical-offset="161" max-vertical-offset="2232">
+        <state line="3" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu_lateral.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="16" selection-start="40" selection-end="40" vertical-scroll-proportion="0.027108435" vertical-offset="0" max-vertical-offset="664">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/clientes_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+        <state line="16" column="0" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.coffee">
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="349" selection-end="354" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="1674">
+        <state line="59" column="20" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.0" vertical-offset="861" max-vertical-offset="1782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/clientes/frequencia.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="2484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/funcionarios.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/funcionarios_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/clientes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/funcionarios/cadastros.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/clientes/cadastros.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="29" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="126">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="2197" selection-end="2197" vertical-scroll-proportion="-37.851852" vertical-offset="58" max-vertical-offset="1188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="149" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="7" selection-start="626" selection-end="626" vertical-scroll-proportion="-14.666667" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="644" selection-end="644" vertical-scroll-proportion="0.35846373" vertical-offset="0" max-vertical-offset="703">
+        <state line="29" column="24" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1044">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/funcionarios_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="226" selection-end="226" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="20" selection-start="3110" selection-end="3110" vertical-scroll-proportion="-12.3" vertical-offset="1737" max-vertical-offset="3942">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="165" selection-end="165" vertical-scroll-proportion="0.24713959" vertical-offset="0" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

@@ -3,8 +3,8 @@ $(document).on 'page:change', ->
   $.get url, {}, (data) ->
     plot2 = $.jqplot("grafico", [data],
       title: "Frequência dos Clientes"
-      height: 310
-      width: 750
+      height: content_height
+      width: content_width / 1.1
       gridPadding:
         right: 35
 
