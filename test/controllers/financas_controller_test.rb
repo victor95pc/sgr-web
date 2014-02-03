@@ -2,7 +2,7 @@ require 'test_helper'
 
 class FinancasControllerTest < ActionController::TestCase
   setup do
-    @financas_grid = {id: 1, cliente: 'Victor', peso: 1.5, valor: Configuracao.calcular_peso(1.5), status: 1}
+    @financas_grid = {id: 1, numero_cartao: 1111111115, peso: 1.5, valor: Configuracao.calcular_peso(1.5), status: 1}
   end
 
   test 'get pagamentos clientes' do
@@ -11,6 +11,6 @@ class FinancasControllerTest < ActionController::TestCase
   end
 
   test 'testar grid pagamentos cliente' do
-    validate_palom_grid :ajax_pagamentos_clientes_grid, [:cliente, :valor, :peso, :status], [], @financas_grid
+    validate_palom_grid :ajax_pagamentos_clientes_grid, [:numero_cartao, :valor, :peso, :status], [], @financas_grid
   end
 end

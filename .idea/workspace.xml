@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="Implementado estrutura basica do controller Finanças com testes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+    <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="Adicionado menu lateral para a aba finanças">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/financas-pagamentos_clientes.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/configuracao.rb" afterPath="$PROJECT_DIR$/app/models/configuracao.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/financas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/financas_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/financas_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/financas_controller_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SGR.iws" />
@@ -29,10 +31,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <file leaf-file-name="financas_controller_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/controllers/financas_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="31" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="990">
+            <state line="13" column="24" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="financas-pagamentos_clientes.js.coffee" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/financas-pagamentos_clientes.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="20" selection-start="669" selection-end="669" vertical-scroll-proportion="0.51638067" vertical-offset="137" max-vertical-offset="1440">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientes-cadastros.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="5" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1440">
               <folding />
             </state>
           </provider>
@@ -41,61 +61,52 @@
       <file leaf-file-name="financas_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/financas_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+            <state line="12" column="19" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1404">
+            <state line="51" column="26" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="2484">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_menu_superior.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb">
+      <file leaf-file-name="test_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="162" selection-end="162" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="234">
+            <state line="43" column="0" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1782">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cadastros.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/clientes/cadastros.html.erb">
+      <file leaf-file-name="funcionarios_controller_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/controllers/funcionarios_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="56" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="126">
+            <state line="14" column="5" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="financas_controller_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/controllers/financas_controller_test.rb">
+      <file leaf-file-name="configuracao.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/configuracao.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="28" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+            <state line="5" column="23" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <file leaf-file-name="configuracao_test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/models/configuracao_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="17" selection-start="3567" selection-end="3567" vertical-scroll-proportion="0.5948553" vertical-offset="2240" max-vertical-offset="3978">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pagamentos_clientes.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/financas/pagamentos_clientes.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="29" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="126">
+            <state line="13" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
               <folding />
             </state>
           </provider>
@@ -104,7 +115,7 @@
       <file leaf-file-name="clientes_controller_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/controllers/clientes_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="81" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+            <state line="14" column="5" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
               <folding />
             </state>
           </provider>
@@ -123,15 +134,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/models/cartao_test.rb" />
-        <option value="$PROJECT_DIR$/test/models/comanda_test.rb" />
         <option value="$PROJECT_DIR$/test/models/despesa_test.rb" />
         <option value="$PROJECT_DIR$/test/models/falta_test.rb" />
         <option value="$PROJECT_DIR$/app/models/falta.rb" />
         <option value="$PROJECT_DIR$/test/models/funcionario_test.rb" />
         <option value="$PROJECT_DIR$/test/models/produto_pago_test.rb" />
         <option value="$PROJECT_DIR$/test/models/produto_test.rb" />
-        <option value="$PROJECT_DIR$/test/models/configuracao_test.rb" />
         <option value="$PROJECT_DIR$/app/models/promocao.rb" />
         <option value="$PROJECT_DIR$/test/models/promocao_test.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/fundo.css" />
@@ -148,7 +156,6 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/test/models/cliente_test.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/test/controllers/clientes_controller_test.rb" />
         <option value="$PROJECT_DIR$/app/views/clientes/cadastros.html.erb" />
         <option value="$PROJECT_DIR$/../Caelum_Rails/vota_prato/app/controllers/qualificacoes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/menu_superior.erb" />
@@ -159,21 +166,25 @@
         <option value="$PROJECT_DIR$/app/controllers/clientes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee" />
         <option value="$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb" />
-        <option value="$PROJECT_DIR$/test/test_helper.rb" />
         <option value="$PROJECT_DIR$/config/initializers/inflections.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/configuracao.rb" />
-        <option value="$PROJECT_DIR$/test/controllers/financas_controller_test.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/financas_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/test/controllers/financas_controller_test.rb" />
+        <option value="$PROJECT_DIR$/test/models/configuracao_test.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/configuracao.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/financas_controller.rb" />
+        <option value="$PROJECT_DIR$/test/test_helper.rb" />
+        <option value="$PROJECT_DIR$/test/controllers/clientes_controller_test.rb" />
+        <option value="$PROJECT_DIR$/test/controllers/funcionarios_controller_test.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/financas-pagamentos_clientes.js.coffee" />
       </list>
     </option>
   </component>
@@ -259,6 +270,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SGR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SGR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -537,11 +566,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
       <recent name="$PROJECT_DIR$/app/views/financas" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
       <recent name="$PROJECT_DIR$/app/views/layouts" />
       <recent name="$PROJECT_DIR$/app/views/funcionarios" />
-      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: SGR">
@@ -807,7 +836,15 @@
       <created>1391446605376</created>
       <updated>1391446605376</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Adicionado menu lateral para a aba finanças">
+      <created>1391447762514</created>
+      <updated>1391447762514</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Refatorando tamanhos das colunas">
+      <created>1391452597511</created>
+      <updated>1391452597511</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -907,7 +944,9 @@
     <MESSAGE value="helper do test refatorado" />
     <MESSAGE value="Implementado estrutura basica do controller Finanças com testes" />
     <MESSAGE value="Adicionado menu Finanças para o controller respectivo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado menu Finanças para o controller respectivo" />
+    <MESSAGE value="Adicionado menu lateral para a aba finanças" />
+    <MESSAGE value="Refatorando tamanhos das colunas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatorando tamanhos das colunas" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -917,21 +956,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/jqplot/excanvas.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="691" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140107165213_create_funcionarios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/jqplot/jquery.jqplot.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="43" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/jqrid/js/jquery.jqGrid.src.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11000" column="33" selection-start="540229" selection-end="540229" vertical-scroll-proportion="3.5423477" vertical-offset="195616" max-vertical-offset="261306" />
@@ -982,11 +1006,6 @@
     <entry file="file://$PROJECT_DIR$/test/models/comanda_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="22" selection-start="338" selection-end="338" vertical-scroll-proportion="0.30167598" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/cartoes.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="27" selection-start="30" selection-end="40" vertical-scroll-proportion="0.025139665" vertical-offset="0" max-vertical-offset="716" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/models/cliente_test.rb">
@@ -1048,13 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/clientes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/funcionarios/cadastros.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="689">
@@ -1065,13 +1077,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="0" selection-start="2197" selection-end="2197" vertical-scroll-proportion="-37.851852" vertical-offset="58" max-vertical-offset="1188">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="149" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>
@@ -1087,7 +1092,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="24" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1102,13 +1107,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="2" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="1782">
           <folding />
         </state>
       </provider>
@@ -1141,51 +1139,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/funcionarios_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comanda.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="691">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/configuracao.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/clientes_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="81" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/financas_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/funcionarios_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="10" selection-start="114" selection-end="114" vertical-scroll-proportion="0.1891892" vertical-offset="0" max-vertical-offset="666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/financas_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
           <folding />
         </state>
       </provider>
@@ -1200,13 +1156,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/clientes/cadastros.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="56" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="126">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="-0.37168142" vertical-offset="360" max-vertical-offset="2484">
           <folding />
         </state>
       </provider>
@@ -1241,7 +1190,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="17" selection-start="3567" selection-end="3567" vertical-scroll-proportion="0.5948553" vertical-offset="2240" max-vertical-offset="3978">
+        <state line="145" column="17" selection-start="3567" selection-end="3567" vertical-scroll-proportion="-6.607143" vertical-offset="2240" max-vertical-offset="3978">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comanda.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="691">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/cartoes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="1" selection-start="126" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/clientes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/configuracoes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="17" selection-start="25" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/configuracao_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="26" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="2484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/configuracao.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/financas_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/clientes_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/funcionarios_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/financas_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="5" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/financas-pagamentos_clientes.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="20" selection-start="669" selection-end="669" vertical-scroll-proportion="0.51638067" vertical-offset="137" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>
