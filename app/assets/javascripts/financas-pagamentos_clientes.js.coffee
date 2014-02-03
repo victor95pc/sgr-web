@@ -8,7 +8,7 @@ $(document).on 'page:change', ->
     width: content_width
     url: "ajax_pagamentos_clientes_grid?oper=show"
     datatype: "json"
-    colNames: ["Nome do Cliente", "Valor", "Status", "Ultima Operação", "Numero Cartão"]
+    colNames: ["Nome do Cliente", "Valor", "Status", "Ultima Operação", "Peso", "Numero Cartão"]
     colModel: [
       name: "cliente"
       index: "cliente"
@@ -17,7 +17,7 @@ $(document).on 'page:change', ->
     ,
       name: "valor"
       index: "valor"
-      editable: true
+      editable: false
       width: 10
       sorttype: "currency"
       formatter: 'currency'
@@ -25,6 +25,7 @@ $(document).on 'page:change', ->
       name: "status"
       index: "status"
       editable: true
+      edittype: 'select', formatter: 'select', editoptions: {value: "1:Pagar;2:Pago;3:Cancelado"}
       width: 5
     ,
       name: "updated_at"
@@ -33,7 +34,15 @@ $(document).on 'page:change', ->
       editable: false
       width: 10
     ,
-      name: "numero_cartao"
+      name: "peso"
+      index: "peso"
+      hidden: true
+      viewable: true
+      editable: true
+      editrules: {edithidden: true}
+      width: 10
+    ,
+    name: "numero_cartao"
       index: "numero_cartao"
       hidden: true
       viewable: true
@@ -59,12 +68,12 @@ $(document).on 'page:change', ->
     },
     {
       errorTextFormat: (data) ->
-        'Erro ao cadastrar uma nova comanda' if data.status == 500
+        'Erro ao editar a comanda' if data.status == 500
 
     },
     {
       errorTextFormat: (data) ->
-        'Erro ao editar a comanda' if data.status == 500
+        'Erro ao cadastrar uma nova comanda' if data.status == 500
 
     },
     {

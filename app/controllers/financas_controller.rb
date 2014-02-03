@@ -11,17 +11,9 @@ class FinancasController < ApplicationController
           comanda.valor = Configuracao.calcular_peso params[:peso]
           comanda.cartao = Cartao.find_by_numero_cartao params[:numero_cartao]
         when 'show'
-          cliente = Cliente.find comanda.cartao
+          cliente = Cliente.where(cartao: comanda.cartao).first
           custons[:cliente] = cliente.present? ? cliente.nome : 'CLIENTE NÃO CADASTRADO'
-
-          case comanda.status
-            when 1
-              custons[:status] = 'Pagar'
-            when 2
-              custons[:status] = 'Pago'
-            when 3
-              custons[:status] = 'Cancelado'
-          end
+          custons[:numero_cartao] = comanda.cartao.numero_cartao
       end
     end
   end

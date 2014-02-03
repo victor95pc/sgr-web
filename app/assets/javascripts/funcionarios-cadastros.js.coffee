@@ -47,13 +47,13 @@ $(document).on 'page:change', ->
     },
     {
       errorTextFormat: (data) ->
-        'Erro ao cadastrar um novo funcionário' if data.status == 500
+        'Erro ao editar um funcionário' if data.status == 500
 
     }
   ,
     {
       errorTextFormat: (data) ->
-        'Erro ao editar um funcionário' if data.status == 500
+        'Erro ao cadastrar um novo funcionário' if data.status == 500
 
     }
   ,

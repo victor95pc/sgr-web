@@ -59,12 +59,12 @@ $(document).on 'page:change', ->
     },
     {
       errorTextFormat: (data) ->
-        'Erro ao cadastrar novo cliente' if data.status == 500
+        'Erro ao editar o cliente' if data.status == 500
 
     },
     {
       errorTextFormat: (data) ->
-        'Erro ao editar o cliente' if data.status == 500
+        'Erro ao cadastrar novo cliente' if data.status == 500
 
     },
     {
