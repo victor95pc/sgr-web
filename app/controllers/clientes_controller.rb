@@ -24,11 +24,10 @@ class ClientesController < ApplicationController
   end
 
   def ajax_grafico_frequencia
-
     comandas = Comanda.where(status: 2).group(:created_at).sum(1)
     datas = Array.new
     comandas.each do |data, vezes|
-      datas << [data, vezes]
+      datas << [data.to_formatted_s(:db), vezes]
     end
     render json: datas
   end
