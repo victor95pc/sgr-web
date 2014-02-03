@@ -1,6 +1,6 @@
 nome = ""
 lastsel2 = 0
-$ ->
+$(document).on 'page:change', ->
   reload = (rowid, result) ->
     $("#lista").trigger "reloadGrid"
   jQuery("#lista").jqGrid
@@ -65,5 +65,10 @@ $ ->
     {
       errorTextFormat: (data) ->
         'Erro ao editar o cliente' if data.status == 500
+
+    },
+    {
+      errorTextFormat: (data) ->
+        'Erro ao deletar o cliente' if data.status == 500
 
     }
