@@ -29,6 +29,10 @@ module ApplicationHelper
         'funcionarios' =>
             {
                 'Cadastros' => funcionarios_cadastros_path
+            },
+        'financas' =>
+            {
+                'Pagamentos Clientes' => financas_pagamentos_clientes_path
             }
     }
 
