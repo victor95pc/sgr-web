@@ -1,5 +1,5 @@
 $(document).on 'page:change', ->
-url = "ajax_grafico_frequencia"
+  url = "ajax_grafico_frequencia"
   $.get url, {}, (data) ->
     plot2 = $.jqplot("grafico", [data],
       title: "Frequência dos Clientes"
