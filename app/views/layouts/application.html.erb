@@ -11,15 +11,12 @@
 <body>
 
 <div id="container">
-  <%= image_tag('SGRLogo.png', id: 'logoSGR') %>
-  <div id="menu_superior">
-
-    <% listar_menu_superior do |nome_menus, link_menus, ativo| %>
-        <%= link_to nome_menus, link_menus, class: ativo %>
-    <% end %>
+  <%= render 'layouts/menu_superior' %>
+  <%= render 'layouts/menu_lateral' %>
+  <div id="content">
+    <%= yield %>
   </div>
 
-  <%= yield %>
 </div>
 
 </body>
