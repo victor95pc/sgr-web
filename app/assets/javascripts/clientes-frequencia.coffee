@@ -1,15 +1,6 @@
-$ ->
-  url = "ajax_grafico_frequencia"
+$(document).on 'page:change', ->
+url = "ajax_grafico_frequencia"
   $.get url, {}, (data) ->
-    line1 = [
-      ["2008-06-30 8:00AM", 4],
-      ["2008-7-30 8:00AM", 6.13],
-      ["2008-8-30 8:00AM", 5.7],
-      ["2008-9-30 8:00AM", 9],
-      ["2008-10-30 8:00AM", 8.2]
-    ]
-    console.log line1
-    console.log data
     plot2 = $.jqplot("grafico", [data],
       title: "Frequência dos Clientes"
       height: 310
@@ -34,7 +25,6 @@ $ ->
             formatString: "%d/%m/%Y"
 
 
-        #min:'May 30, 2008',
           tickInterval: "1 month"
 
         yaxis:
