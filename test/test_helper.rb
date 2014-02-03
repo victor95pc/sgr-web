@@ -23,6 +23,17 @@ class ActiveSupport::TestCase
     validate(model, *fields) { assert model.save }
   end
 
+  def validate(model, *fields)
+    fields.each do |field|
+      model[field] = nil
+      fields.each do |field|
+        model[field] = 123 unless model[field] == nil
+        yield
+      end
+
+    end
+  end
+
   def validate_palom_grid(url, columns_require, columns_not_require, data)
     opers = ['add', 'edit']
 
@@ -65,17 +76,6 @@ class ActiveSupport::TestCase
             end
         end
       end
-    end
-  end
-
-  def validate(model, *fields)
-    fields.each do |field|
-      model[field] = nil
-      fields.each do |field|
-        model[field] = 123 unless model[field] == nil
-        yield
-      end
-
     end
   end
 
