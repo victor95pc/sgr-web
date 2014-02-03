@@ -1,4 +1,4 @@
-$ ->
+$(document).on 'page:change', ->
   reload = (rowid, result) ->
     $("#lista").trigger "reloadGrid"
   jQuery("#lista").jqGrid
@@ -25,6 +25,7 @@ $ ->
     ,
       name: "created_at"
       index: "created_at"
+      formatter: 'date'
       editable: false
       width: 30
     ]
@@ -35,12 +36,12 @@ $ ->
     viewrecords: true
     sortorder: "asc"
     loadonce: false
-    caption: "Funcionarios"
+    caption: "Funcionários"
     editurl: "ajax_cadastros_grid"
 
   jQuery("#lista").jqGrid "navGrid", "#lista_footer", {
-      edit: false
-      add: false
+      edit: true
+      add: true
       del: true
       reloadAfterSubmit: true
     },
@@ -53,6 +54,12 @@ $ ->
     {
       errorTextFormat: (data) ->
         'Erro ao editar um funcionário' if data.status == 500
+
+    }
+  ,
+    {
+      errorTextFormat: (data) ->
+        'Erro ao deletar o funcionário' if data.status == 500
 
     }
 
