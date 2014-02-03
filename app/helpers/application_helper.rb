@@ -4,7 +4,8 @@ module ApplicationHelper
   def listar_menu_superior
     menu_superior = {
         'Clientes' => clientes_cadastros_path,
-        'Funcionários' => funcionarios_cadastros_path
+        'Funcionários' => funcionarios_cadastros_path,
+        'Finanças' => financas_pagamentos_clientes_path
     }
 
     menu_superior.each do |nome_menus, link_menus|
