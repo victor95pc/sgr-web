@@ -12,7 +12,7 @@ $(document).on 'page:change', ->
     colModel: [
       name: "nome"
       index: "nome"
-      width: 10
+      width: 15
       editable: true
     ,
       name: "telefone"
@@ -31,7 +31,7 @@ $(document).on 'page:change', ->
       index: "created_at"
       formatter: 'date'
       editable: false
-      width: 10
+      width: 5
     ,
       name: "numero_cartao"
       index: "numero_cartao"
