@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="Refatoração na interface do SGR e adicionado o botao 'Sair' e a faixa do footer">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/financas/pagamentos_clientes.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/configuracao.rb" afterPath="$PROJECT_DIR$/app/models/configuracao.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+    <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="Implementado estrutura basica do controller Finanças com testes">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/financas.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/financas.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/financas_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/financas_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/financas_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/financas_helper_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SGR.iws" />
@@ -771,7 +773,11 @@
       <created>1391442484483</created>
       <updated>1391442484483</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Implementado estrutura basica do controller Finanças com testes">
+      <created>1391446239848</created>
+      <updated>1391446239848</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -869,7 +875,8 @@
     <MESSAGE value="Alteração feitas nas view para suportar as grids" />
     <MESSAGE value="Refatoração na interface do SGR e adicionado o botao 'Sair' e a faixa do footer" />
     <MESSAGE value="helper do test refatorado" />
-    <option name="LAST_COMMIT_MESSAGE" value="helper do test refatorado" />
+    <MESSAGE value="Implementado estrutura basica do controller Finanças com testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementado estrutura basica do controller Finanças com testes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
