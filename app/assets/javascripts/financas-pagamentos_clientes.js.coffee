@@ -40,7 +40,7 @@ $(document).on 'page:change', ->
       editrules: {edithidden: true}
       width: 10
     ,
-    name: "numero_cartao"
+      name: "numero_cartao"
       index: "numero_cartao"
       hidden: true
       viewable: true
