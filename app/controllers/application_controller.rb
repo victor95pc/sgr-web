@@ -15,6 +15,7 @@ class ApplicationController < ActionController::Base
     config_params[:id] ||= :id
     config_params[:created_at] ||= false
     config_params[:updated_at] ||= false
+    config_params[:where] ||= nil
 
     oper = params[:oper]
     id = params[:id]
@@ -101,7 +102,7 @@ class ApplicationController < ActionController::Base
           if (search)
             model_results = model.find_by("#{search_field} LIKE '%#{search_string}%'").order("#{sidx} #{sord}").limit(limit).offset(start)
           else
-            model_results = model.all
+            model_results = model.all.where(config_params[:where])
           end
         else
           yield oper, model_results, nil
@@ -125,7 +126,7 @@ class ApplicationController < ActionController::Base
 
         render json: resposta, status: :ok
       else
-        render inline: 'Opers not found check your javascript file', status: :not_found
+        render inline: "Operation |#{oper}| not found check your javascript file", status: :not_found
     end
   end
 end
