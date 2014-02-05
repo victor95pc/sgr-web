@@ -1,0 +1,25 @@
+// Place all the styles related to the configuracoes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#mudar_preco {
+  color: #000;
+  margin: 15px auto 40px auto;
+  width: 260px;
+}
+
+#content #sobre {
+  margin: 50px auto;
+  text-align: center;
+  color: #000;
+  width: inherit;
+  height: inherit;
+}
+
+#content img {
+  width: 50px;
+}
+
+#content #configuracao_valor_kg {
+  display: inherit;
+}
