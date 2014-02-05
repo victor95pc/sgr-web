@@ -5,7 +5,8 @@ module ApplicationHelper
     menu_superior = {
         'Clientes' => clientes_cadastros_path,
         'Funcionários' => funcionarios_cadastros_path,
-        'Finanças' => financas_pagamentos_clientes_path
+        'Finanças' => financas_pagamentos_clientes_path,
+        'Promoções' => promocoes_promocoes_especiais_path
     }
 
     menu_superior.each do |nome_menus, link_menus|
@@ -33,6 +34,11 @@ module ApplicationHelper
         'financas' =>
             {
                 'Pagamentos Clientes' => financas_pagamentos_clientes_path
+            },
+        'promocoes' =>
+            {
+                'Promoções Especiais' => promocoes_promocoes_especiais_path,
+                'Promoções Padrão' => promocoes_promocoes_padrao_path
             }
     }
 

@@ -1,4 +1,5 @@
 promocao_jose:
+  id: 1
   nome: 'Promoção do Victor'
   descricao: 'A grande promoção'
   valor: 50.12

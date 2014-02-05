@@ -22,6 +22,13 @@ SGR::Application.routes.draw do
   get 'financas/ajax_pagamentos_clientes_grid' => 'financas#ajax_pagamentos_clientes_grid'
   post 'financas/ajax_pagamentos_clientes_grid' => 'financas#ajax_pagamentos_clientes_grid'
 
+  get 'promocoes' => redirect('promocoes/promocoes_especiais')
+  get 'promocoes/promocoes_especiais' => 'promocoes#promocoes_especiais'
+  get 'promocoes/promocoes_padrao' => 'promocoes#promocoes_padrao'
+  get 'promocoes/ajax_promocoes_especiais_grid' => 'promocoes#ajax_promocoes_especiais_grid'
+  get 'promocoes/ajax_promocoes_padrao_grid' => 'promocoes#ajax_promocoes_padrao_grid'
+  post 'promocoes/ajax_promocoes_especiais_grid' => 'promocoes#ajax_promocoes_especiais_grid'
+  post 'promocoes/ajax_promocoes_padrao_grid' => 'promocoes#ajax_promocoes_padrao_grid'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
