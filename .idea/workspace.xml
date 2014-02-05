@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="Implementado os testes da aba promocoes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes-especiais.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes-padrao.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/promocoes/promocoes_especiais.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/promocoes/promocoes_padrao.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/promocoes.yml" afterPath="$PROJECT_DIR$/test/fixtures/promocoes.yml" />
+    <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes_especiais.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes_padrao.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/promocao.rb" afterPath="$PROJECT_DIR$/app/models/promocao.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/promocao_test.rb" afterPath="$PROJECT_DIR$/test/models/promocao_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/promocoes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/promocoes_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/promocoes_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/promocoes_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SGR.iws" />
@@ -40,34 +36,7 @@
       <file leaf-file-name="promocoes_controller_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/controllers/promocoes_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="594">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="21" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1098">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="6" selection-start="617" selection-end="617" vertical-scroll-proportion="0.5529954" vertical-offset="0" max-vertical-offset="651">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="86" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1566">
+            <state line="17" column="5" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
               <folding />
             </state>
           </provider>
@@ -76,34 +45,25 @@
       <file leaf-file-name="promocoes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/promocoes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="25" selection-start="57" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+            <state line="22" column="60" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_menu_superior.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb">
+      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="234">
+            <state line="63" column="111" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.8621746" vertical-offset="571" max-vertical-offset="1386">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="promocoes.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/fixtures/promocoes.yml">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="7" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="promocao.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/promocao.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="23" selection-start="38" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="252">
+            <state line="128" column="43" selection-start="3905" selection-end="3905" vertical-scroll-proportion="0.0" vertical-offset="1824" max-vertical-offset="2502">
               <folding />
             </state>
           </provider>
@@ -112,16 +72,25 @@
       <file leaf-file-name="financas_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/financas_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="63" selection-start="450" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="468">
+            <state line="8" column="15" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="promocoes-promocoes_especiais.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes_especiais.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="468">
+            <state line="6" column="46" selection-start="224" selection-end="224" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="1242">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promocoes-promocoes_padrao.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes_padrao.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="54" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1152">
               <folding />
             </state>
           </provider>
@@ -140,10 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/models/produto_pago_test.rb" />
-        <option value="$PROJECT_DIR$/test/models/produto_test.rb" />
-        <option value="$PROJECT_DIR$/app/models/promocao.rb" />
-        <option value="$PROJECT_DIR$/test/models/promocao_test.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/fundo.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/_painel.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140107165119_create_cartoes.rb" />
@@ -155,7 +120,6 @@
         <option value="$PROJECT_DIR$/../Caelum_Rails/vota_prato/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/../Caelum_Rails/vota_prato/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.coffee" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/test/models/cliente_test.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/clientes/cadastros.html.erb" />
@@ -181,16 +145,21 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/painel.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/funcionarios-cadastros.js.coffee" />
         <option value="$PROJECT_DIR$/app/controllers/financas_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/clientes-cadastros.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/financas-pagamentos_clientes.js.coffee" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/fixtures/promocoes.yml" />
         <option value="$PROJECT_DIR$/test/controllers/promocoes_controller_test.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/promocoes_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/promocao.rb" />
+        <option value="$PROJECT_DIR$/test/models/promocao_test.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes_especiais.js.coffee" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes_padrao.js.coffee" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/promocoes_controller.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -273,6 +242,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SGR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SGR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SGR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SGR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SGR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SGR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -316,6 +335,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -328,10 +351,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -714,7 +733,15 @@
       <created>1391536019376</created>
       <updated>1391536019376</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Implementado os metodos basicos para a exibição da aba promoção nos menus e seus testes de grid">
+      <created>1391604037566</created>
+      <updated>1391604037566</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Agora o Palom Grid pode receber condições em suas buscas">
+      <created>1391607372923</created>
+      <updated>1391607372923</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -741,6 +768,7 @@
     <frame x="-1" y="-4" width="1154" height="869" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28274968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28664073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -756,7 +784,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -796,8 +823,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Criando estrutura basica do SGR" />
-    <MESSAGE value="Sistema de teste aprimorado e algumas modificações feitas nos modelos" />
     <MESSAGE value="Modificações feitas na lista de Gems" />
     <MESSAGE value="Adicionado Jquery ui para a grid" />
     <MESSAGE value="Alteração no campo numero_cartao de int para string" />
@@ -821,7 +846,9 @@
     <MESSAGE value="Refatorando as grids" />
     <MESSAGE value="Solucionado erro de indentação" />
     <MESSAGE value="Adicionado estrutura básica do controller promoções" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado estrutura básica do controller promoções" />
+    <MESSAGE value="Implementado os metodos basicos para a exibição da aba promoção nos menus e seus testes de grid" />
+    <MESSAGE value="Agora o Palom Grid pode receber condições em suas buscas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agora o Palom Grid pode receber condições em suas buscas" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -831,11 +858,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/models/cliente_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="312" selection-end="312" vertical-scroll-proportion="0.30167598" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="27" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0" vertical-offset="395" max-vertical-offset="1188" />
@@ -896,11 +918,6 @@
         <state line="2" column="15" selection-start="25" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="463" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1224" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/clientes/cadastros.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="56" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="126" />
@@ -956,11 +973,6 @@
         <state line="13" column="24" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/funcionarios_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="145" column="17" selection-start="3567" selection-end="3567" vertical-scroll-proportion="0.5263158" vertical-offset="2240" max-vertical-offset="3978" />
@@ -974,16 +986,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/funcionarios.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/clientes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="14" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.0" vertical-offset="1717" max-vertical-offset="2484" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/clientes-frequencia.coffee">
@@ -1016,25 +1018,6 @@
         <state line="1" column="12" selection-start="39" selection-end="49" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="126" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/promocoes/promocoes_especiais.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes-especiais.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1566">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes-padrao.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1566">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
@@ -1042,16 +1025,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/promocao.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="23" selection-start="38" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures/promocoes.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="7" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state line="1" column="7" selection-start="22" selection-end="22" vertical-scroll-proportion="0.024291499" vertical-offset="0" max-vertical-offset="741">
           <folding />
         </state>
       </provider>
@@ -1061,6 +1037,55 @@
         <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.10084034" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="86" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.6059744" vertical-offset="114" max-vertical-offset="1566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/promocoes/promocoes_especiais.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="6" selection-start="617" selection-end="617" vertical-scroll-proportion="0.5325444" vertical-offset="0" max-vertical-offset="676">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="21" selection-start="609" selection-end="609" vertical-scroll-proportion="0.3519553" vertical-offset="162" max-vertical-offset="1098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/promocao_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="48" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/clientes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/promocoes_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="5" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
@@ -1068,44 +1093,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/funcionarios_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.2672065" vertical-offset="0" max-vertical-offset="741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/promocao.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.10055866" vertical-offset="0" max-vertical-offset="716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/financas_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="450" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+        <state line="8" column="15" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes_padrao.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="54" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1152">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="43" selection-start="3905" selection-end="3905" vertical-scroll-proportion="0.0" vertical-offset="1824" max-vertical-offset="2502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/promocoes-promocoes_especiais.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="46" selection-start="224" selection-end="224" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="1242">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/promocoes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="57" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+        <state line="22" column="60" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu_superior.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="86" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1566">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1098">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="617" selection-end="617" vertical-scroll-proportion="0.5529954" vertical-offset="0" max-vertical-offset="651">
+        <state line="63" column="111" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.8621746" vertical-offset="571" max-vertical-offset="1386">
           <folding />
         </state>
       </provider>

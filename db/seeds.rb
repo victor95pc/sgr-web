@@ -56,6 +56,15 @@ comanda_victor = Comanda.create cartao_id: cartao_do_victor.id, peso: 1.234847, 
 
 
 #######################
+####### COMANDAS ######
+#######################
+Promocao.create cliente: victor, nome: 'Promoção do Victor', descricao: 'Desconto perfeito', valor: 50.0
+Promocao.create cliente: victor, nome: 'Promoção de Tester', descricao: 'Outro Desconto do Victor', valor: 10.0
+Promocao.create cliente: nil, nome: 'Promoção de Todos', descricao: 'O Desconto deve ser igual para manter o sistema', valor: 10.0
+Promocao.create cliente: nil, nome: 'Promoção para Todos', descricao: 'Funciona igual o Socialismo', valor: 100.0
+
+
+#######################
 #### PRODUTOS PAGOS ###
 #######################
 ProdutoPago.create produto_id: coca.id, comanda_id: comanda_victor.id, quantidade: 4

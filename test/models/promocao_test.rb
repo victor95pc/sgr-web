@@ -7,7 +7,7 @@ class PromocaoTest < ActiveSupport::TestCase
     promocao.cliente = clientes(:victor)
     assert promocao.save
 
-    required promocao, :nome, :valor, :descricao, :cliente_id
+    required promocao, :nome, :valor, :descricao
 
   end
 end
