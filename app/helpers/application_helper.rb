@@ -6,7 +6,8 @@ module ApplicationHelper
         'Clientes' => clientes_cadastros_path,
         'Funcionários' => funcionarios_cadastros_path,
         'Finanças' => financas_pagamentos_clientes_path,
-        'Promoções' => promocoes_promocoes_especiais_path
+        'Promoções' => promocoes_promocoes_especiais_path,
+        'Configuração' => configuracoes_preco_path
     }
 
     menu_superior.each do |nome_menus, link_menus|
@@ -39,6 +40,11 @@ module ApplicationHelper
             {
                 'Promoções Especiais' => promocoes_promocoes_especiais_path,
                 'Promoções Padrão' => promocoes_promocoes_padrao_path
+            },
+        'configuracoes' =>
+            {
+                'Preço' => configuracoes_preco_path,
+                'Sobre' => configuracoes_sobre_path,
             }
     }
 

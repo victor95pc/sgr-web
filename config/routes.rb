@@ -30,6 +30,11 @@ SGR::Application.routes.draw do
   post 'promocoes/ajax_promocoes_especiais_grid' => 'promocoes#ajax_promocoes_especiais_grid'
   post 'promocoes/ajax_promocoes_padrao_grid' => 'promocoes#ajax_promocoes_padrao_grid'
 
+  get 'configuracoes' => redirect('configuracoes/preco')
+  get 'configuracoes/preco' => 'configuracoes#preco'
+  get 'configuracoes/sobre' => 'configuracoes#sobre'
+  patch 'configuracoes/mudar_preco' => 'configuracoes#mudar_preco'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
