@@ -3,6 +3,7 @@ require 'test_helper'
 
 class PromocoesControllerTest < ActionController::TestCase
   setup do
+    sign_in users(:victor)
     @promocao_especial_grid = {id: 2, cliente: 'Victor Palomo de Castro', nome: 'Dia do Victor', valor: 50.0, descricao: 'Meu DIA!!'}
     @promocao_padrao_grid = {id: 3, nome: 'Dia de Todos', valor: 1000.0, descricao: 'Porque o dia é de todos nos'}
   end

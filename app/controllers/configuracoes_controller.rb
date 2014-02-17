@@ -1,5 +1,6 @@
 class ConfiguracoesController < ApplicationController
   before_action :get_configuracao, only: [:mudar_preco, :preco]
+  before_filter :authenticate_user!
 
   def preco
   end

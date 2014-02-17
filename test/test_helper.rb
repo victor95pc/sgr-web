@@ -92,3 +92,7 @@ class ActiveSupport::TestCase
     test_columns.merge({id: data[:id]})
   end
 end
+
+class ActionController::TestCase
+  include Devise::TestHelpers
+end

@@ -1,5 +1,7 @@
 #encoding: utf-8
 class FinancasController < ApplicationController
+  before_filter :authenticate_user!
+
   def pagamentos_clientes
 
   end

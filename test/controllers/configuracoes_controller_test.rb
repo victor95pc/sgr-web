@@ -2,6 +2,7 @@ require 'test_helper'
 
 class ConfiguracoesControllerTest < ActionController::TestCase
   setup do
+    sign_in users(:victor)
     @configuracao = {valor_kg: 50.20}
   end
 

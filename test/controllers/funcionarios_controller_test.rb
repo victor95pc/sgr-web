@@ -2,6 +2,7 @@ require 'test_helper'
 
 class FuncionariosControllerTest < ActionController::TestCase
   setup do
+    sign_in users(:victor)
     @funcionario_grid = {id: 2, nome: 'Victor Palomo de Castro', cargo: 'Dono do Mundo Socialista', salario: 0}
   end
 

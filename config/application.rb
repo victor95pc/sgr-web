@@ -10,6 +10,15 @@ module SGR
   class Application < Rails::Application
     config.assets.precompile << '*.css.scss'
     config.assets.precompile << '*.js'
+
+    config.to_prepare do
+      Devise::SessionsController.layout "login.html"
+      Devise::RegistrationsController.layout proc { |controller| user_signed_in? ? "application.html" : "login.html" }
+      Devise::ConfirmationsController.layout "login.html"
+      Devise::UnlocksController.layout "login.html"
+      Devise::PasswordsController.layout "login.html"
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

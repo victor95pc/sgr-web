@@ -3,15 +3,15 @@ module ApplicationHelper
 
   def listar_menu_superior
     menu_superior = {
-        'Clientes' => clientes_cadastros_path,
-        'Funcionários' => funcionarios_cadastros_path,
-        'Finanças' => financas_pagamentos_clientes_path,
-        'Promoções' => promocoes_promocoes_especiais_path,
-        'Configuração' => configuracoes_preco_path
+        'Clientes' => cadastros_clientes_path,
+        'Funcionários' => cadastros_funcionarios_path,
+        'Finanças' => pagamentos_clientes_financas_path,
+        'Promoções' => promocoes_especiais_promocoes_path,
+        'Configuração' => preco_configuracoes_path
     }
 
     menu_superior.each do |nome_menus, link_menus|
-      if link_menus.start_with? '/'+controller_name
+      if link_menus.start_with? '/'+controller_name or link_menus.start_with? controller_name
         ativo = 'ativo'
       else
         ativo = nil
@@ -24,27 +24,27 @@ module ApplicationHelper
     menu_lateral = {
         'clientes' =>
             {
-                'Cadastros' => clientes_cadastros_path,
-                'Frequência' => clientes_frequencia_path
+                'Cadastros' => cadastros_clientes_path,
+                'Frequência' => frequencia_clientes_path
             },
 
         'funcionarios' =>
             {
-                'Cadastros' => funcionarios_cadastros_path
+                'Cadastros' => cadastros_funcionarios_path
             },
         'financas' =>
             {
-                'Pagamentos Clientes' => financas_pagamentos_clientes_path
+                'Pagamentos Clientes' => pagamentos_clientes_financas_path
             },
         'promocoes' =>
             {
-                'Promoções Especiais' => promocoes_promocoes_especiais_path,
-                'Promoções Padrão' => promocoes_promocoes_padrao_path
+                'Promoções Especiais' => promocoes_especiais_promocoes_path,
+                'Promoções Padrão' => promocoes_padrao_promocoes_path
             },
         'configuracoes' =>
             {
-                'Preço' => configuracoes_preco_path,
-                'Sobre' => configuracoes_sobre_path,
+                'Preço' => preco_configuracoes_path,
+                'Sobre' => sobre_configuracoes_path,
             }
     }
 

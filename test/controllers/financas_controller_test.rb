@@ -2,6 +2,7 @@ require 'test_helper'
 
 class FinancasControllerTest < ActionController::TestCase
   setup do
+    sign_in users(:victor)
     @financas_grid = {id: 1, numero_cartao: 1111111115, peso: 1.5, valor: Configuracao.calcular_peso(1.5), status: 1}
   end
 

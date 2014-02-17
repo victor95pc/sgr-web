@@ -1,4 +1,5 @@
 class PromocoesController < ApplicationController
+  before_filter :authenticate_user!
 
   def promocoes_especiais
 

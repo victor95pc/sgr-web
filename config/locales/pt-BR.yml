@@ -209,3 +209,7 @@ pt-BR:
   activerecord:
     errors:
       <<: *errors
+    attributes:
+      user:
+        password: "Senha"
+        password_confirmation: "Senha"

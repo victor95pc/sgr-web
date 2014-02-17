@@ -1,5 +1,6 @@
 #encoding: utf-8
 class ClientesController < ApplicationController
+  before_filter :authenticate_user!
 
   def cadastros
 

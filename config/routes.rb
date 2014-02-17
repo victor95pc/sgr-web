@@ -3,37 +3,62 @@ SGR::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  #root 'clientes#cadastros'
+  get '/' => redirect('clientes/cadastros')
 
-  get 'clientes' => redirect('clientes/cadastros')
-  get 'clientes/ajax_cadastros_grid' => 'clientes#ajax_cadastros_grid'
-  post 'clientes/ajax_cadastros_grid' => 'clientes#ajax_cadastros_grid'
-  get 'clientes/cadastros' => 'clientes#cadastros'
-  get 'clientes/frequencia' => 'clientes#frequencia'
-  get 'clientes/ajax_grafico_frequencia' => 'clientes#ajax_grafico_frequencia'
+  devise_for :users, :path => :cliente, :path_names => {sign_in: 'logar', sign_out: 'deslogar', sign_up: 'registar'} do
+    get 'cliente/esqueceu-senha' => 'devise/passwords#new', as: 'new_user_password'
+  end
 
-  get 'funcionarios' => redirect('funcionarios/cadastros')
-  get 'funcionarios/cadastros' => 'funcionarios#cadastros'
-  post 'funcionarios/ajax_cadastros_grid' => 'funcionarios#ajax_cadastros_grid'
-  get 'funcionarios/ajax_cadastros_grid' => 'funcionarios#ajax_cadastros_grid'
+  resources :clientes, only: [] do
+    collection do
+      root to: :cadastros
+      get :ajax_cadastros_grid
+      get :ajax_grafico_frequencia
+      post :ajax_cadastros_grid
+      get :cadastros
+      get :frequencia
+    end
+  end
 
-  get 'financas' => redirect('financas/pagamentos_clientes')
-  get 'financas/pagamentos_clientes' => 'financas#pagamentos_clientes'
-  get 'financas/ajax_pagamentos_clientes_grid' => 'financas#ajax_pagamentos_clientes_grid'
-  post 'financas/ajax_pagamentos_clientes_grid' => 'financas#ajax_pagamentos_clientes_grid'
+  resources :funcionarios, only: [] do
+    collection do
+      root to: :cadastros
+      get :ajax_cadastros_grid
+      post :ajax_cadastros_grid
+      get :cadastros
+    end
+  end
 
-  get 'promocoes' => redirect('promocoes/promocoes_especiais')
-  get 'promocoes/promocoes_especiais' => 'promocoes#promocoes_especiais'
-  get 'promocoes/promocoes_padrao' => 'promocoes#promocoes_padrao'
-  get 'promocoes/ajax_promocoes_especiais_grid' => 'promocoes#ajax_promocoes_especiais_grid'
-  get 'promocoes/ajax_promocoes_padrao_grid' => 'promocoes#ajax_promocoes_padrao_grid'
-  post 'promocoes/ajax_promocoes_especiais_grid' => 'promocoes#ajax_promocoes_especiais_grid'
-  post 'promocoes/ajax_promocoes_padrao_grid' => 'promocoes#ajax_promocoes_padrao_grid'
+  resources :financas, only: [] do
+    collection do
+      root to: :pagamentos_clientes
+      get :pagamentos_clientes
+      post :ajax_pagamentos_clientes_grid
+      get :ajax_pagamentos_clientes_grid
+    end
+  end
 
-  get 'configuracoes' => redirect('configuracoes/preco')
-  get 'configuracoes/preco' => 'configuracoes#preco'
-  get 'configuracoes/sobre' => 'configuracoes#sobre'
-  patch 'configuracoes/mudar_preco' => 'configuracoes#mudar_preco'
+  resources :promocoes, only: [] do
+    collection do
+      root to: :promocoes_especiais
+      get :promocoes_especiais
+      get :promocoes_padrao
+      get :promocoes_especiais
+      get :ajax_promocoes_especiais_grid
+      get :ajax_promocoes_padrao_grid
+      post :ajax_promocoes_especiais_grid
+      post :ajax_promocoes_padrao_grid
+    end
+  end
+
+  resources :configuracoes, only: [] do
+    collection do
+      root to: :preco
+      get :preco
+      get :sobre
+      post :mudar_preco
+    end
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
