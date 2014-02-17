@@ -1,0 +1,73 @@
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <table>
+      <tbody>
+      <%= devise_error_messages! %>
+
+
+      <tr>
+        <td>
+
+          <%= f.label :email %>
+
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+
+          <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
+
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+
+          <%= f.label :password, 'Senha' %>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+
+          <%= f.password_field :password, class: 'form-control' %>
+
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+
+          <%= f.label :password_confirmation, 'Confirmar senha' %>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+
+          <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+        </td>
+      </tr>
+
+
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="2">
+          <%= render "devise/shared/links" %>
+          <%= f.submit 'Registrar', id: 'registrar', class: 'btn btn-default' %>
+
+        </td>
+      </tr>
+      </tfoot>
+    </table>
+
+<% end %>
+
+

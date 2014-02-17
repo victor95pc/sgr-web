@@ -1,0 +1,66 @@
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+    <table>
+      <tbody>
+      <ul>
+        <% flash.each do |name, msg| %>
+            <%= content_tag :li, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+        <% end %>
+      </ul>
+      <tr>
+        <td>
+
+          <%= f.label :email %>
+
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+
+          <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
+
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+
+          <%= f.label :password, 'Senha' %>
+
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+
+          <%= f.password_field :password, class: 'form-control' %>
+
+        </td>
+      </tr>
+
+
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="2">
+
+          <%= f.submit 'Logar', class: 'btn btn-default' %>
+
+        </td>
+      </tr>
+      </tfoot>
+    </table>
+
+    <% if devise_mapping.rememberable? -%>
+        <div id="opcoes">
+          <%= f.check_box :remember_me %> <%= f.label :remember_me, 'Lembrar-se' %>
+          <br/>
+          <%= render "devise/shared/links" %>
+        </div>
+    <% end %>
+<% end %>
+
+
