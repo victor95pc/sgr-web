@@ -1,0 +1,2 @@
+class WebserviceController < ApplicationController
+end
