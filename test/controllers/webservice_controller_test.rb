@@ -5,10 +5,10 @@ class WebserviceControllerTest < ActionController::TestCase
     sign_in users(:victor)
     @cartao = cartoes(:cartao_maria)
     @cliente = clientes(:victor)
-    @hex_cartao = @cartao.numero_cartao.to_s(16)
+    @hex_cartao = @cartao.numero_cartao.to_i.to_s(16)
   end
 
-  test 'mudar preco por kilo de comida -- MudarPrecoComandaGlobal' do
+  test 'Mudar preco por kilo de comida -- MudarPrecoComandaGlobal' do
     get :mudar_preco, {valor_kg: 20.0}
     assert_response :ok
   end
