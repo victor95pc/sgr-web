@@ -48,6 +48,7 @@ gem 'validates_timeliness'
 
 gem 'jquery-ui-rails'
 
+gem 'zeus'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

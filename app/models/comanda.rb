@@ -11,4 +11,9 @@ class Comanda < ActiveRecord::Base
 
   belongs_to :cartao
   has_many :produto_pagos
+
+  def self.comanda_a_pagar(numero_cartao)
+    cartao = Cartao.where(numero_cartao: numero_cartao).first
+    Comanda.where(cartao: cartao, status: 1)
+  end
 end

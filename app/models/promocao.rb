@@ -4,4 +4,12 @@ class Promocao < ActiveRecord::Base
   validates_associated :cliente
 
   belongs_to :cliente
+
+  def self.promocoes_especias(id_cliente)
+    Promocao.where cliente_id: id_cliente
+  end
+
+  def self.promocoes_padrao
+    Promocao.where cliente_id: nil
+  end
 end
