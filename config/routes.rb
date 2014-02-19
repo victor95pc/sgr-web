@@ -5,7 +5,7 @@ SGR::Application.routes.draw do
   # You can have the root of your site routed with "root"
   get '/' => redirect('clientes/cadastros')
 
-  devise_scope :users do
+  devise_scope :user do
     get 'cliente/esqueceu-senha' => 'devise/passwords#new', as: 'new_user_password'
   end
   devise_for :users, :path => :cliente, :path_names => {sign_in: 'logar', sign_out: 'deslogar', sign_up: 'registar'}
