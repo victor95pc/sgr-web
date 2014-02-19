@@ -42,6 +42,10 @@ group :development, :test do
   gem 'binding_of_caller'
 end
 
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
 gem 'devise', '3.0.0rc'
 
 gem 'validates_timeliness'
