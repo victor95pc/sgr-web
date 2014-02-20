@@ -1,5 +1,4 @@
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => {:method => :post}) do |f| %>
-    <%= devise_error_messages! %>
     <table>
       <tbody>
 
@@ -28,8 +27,8 @@
       <tr>
         <td colspan="2">
 
-          <%= link_to "Voltar", new_session_path(resource_name), :id => "voltar", :class => "btn btn-default" %>
-          <%= f.submit 'Refazer a senha', class: 'btn btn-default', id: 'refazer-senha' %>
+          <%= render "devise/shared/links" %>
+          <%= f.submit 'Enviar email com instruções', class: 'btn btn-default', id: 'refazer-senha' %>
 
         </td>
       </tr>

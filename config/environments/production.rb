@@ -76,5 +76,15 @@ SGR::Application.configure do
   # config.autoflush_log = false
   config.action_mailer.default_url_options = {:host => 'sgr.herokuapp.com'}
 
+  # Mandrill Connectivity
+  config.action_mailer.smtp_settings = {
+      :address => 'smtp.mandrillapp.com',
+      :port => 587, # ports 587 and 2525 are also supported with STARTTLS
+      :enable_starttls_auto => true, # detects and uses STARTTLS
+      :user_name => 'app22362851@heroku.com',
+      :password => 'rnUifFGNpIHYpMfPZTCo1g', # SMTP password is any valid API key
+      :authentication => 'login', # Mandrill supports 'plain' or 'login'
+      :domain => 'sgr.herokuapp.com', # your domain to identify your server when connecting
+  }
 
 end

@@ -213,3 +213,4 @@ pt-BR:
       user:
         password: "Senha"
         password_confirmation: "Senha"
+        reset_password_token: "Link"

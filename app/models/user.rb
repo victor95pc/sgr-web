@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :confirmable, :trackable, :validatable
 
   def active_for_authentication?
     # Uncomment the below debug statement to view the properties of the returned self model values.

@@ -7,6 +7,7 @@ SGR::Application.routes.draw do
 
   devise_scope :user do
     get 'cliente/esqueceu-senha' => 'devise/passwords#new', as: 'new_user_password'
+    get 'cliente/reenviar-email' => 'devise/confirmations#new', as: 'new_user_confirmation'
   end
   devise_for :users, :path => :cliente, :path_names => {sign_in: 'logar', sign_out: 'deslogar', sign_up: 'registar'}
 
