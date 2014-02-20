@@ -1,34 +1,10 @@
 <%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => {:method => :post}) do |f| %>
-    <table>
-      <tbody>
+    <%= devise_error_messages %>
+    <div id="form">
+      <%= f.label :email, 'Email' %>
+      <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
 
-      <%= devise_error_messages! %>
-      <tr>
-        <td>
-
-          <%= f.label :email, 'Email' %>
-
-        </td>
-      </tr>
-
-
-      <tr>
-        <td>
-
-          <%= f.password_field :email, :autofocus => true, class: 'form-control' %>
-
-        </td>
-      </tr>
-
-
-      </tbody>
-      <tfoot>
-      <tr>
-        <td>
-          <%= render "devise/shared/links" %>
-          <%= f.submit 'Enviar confirmação', class: 'btn btn-default', id: 'reenviar-email' %>
-        </td>
-      </tr>
-      </tfoot>
-    </table>
+      <%= render "devise/shared/links" %>
+      <%= f.submit 'Enviar confirmação', class: 'btn btn-default', id: 'reenviar-email' %>
+    </div>
 <% end %>

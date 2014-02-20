@@ -1,42 +1,14 @@
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => {:method => :post}) do |f| %>
-    <table>
-      <tbody>
+    <%= devise_error_messages %>
+    <div id="form">
 
-      <%= devise_error_messages! %>
+      <%= f.label :email %>
+      <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
 
-      <tr>
-        <td>
+      <%= render "devise/shared/links" %>
+      <%= f.submit 'Enviar email com instruções', class: 'btn btn-default', id: 'refazer-senha' %>
 
-          <%= f.label :email %>
-
-        </td>
-      </tr>
-
-
-      <tr>
-        <td>
-
-          <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
-
-        </td>
-      </tr>
-
-
-      </tbody>
-      <tfoot>
-      <tr>
-        <td colspan="2">
-
-          <%= render "devise/shared/links" %>
-          <%= f.submit 'Enviar email com instruções', class: 'btn btn-default', id: 'refazer-senha' %>
-
-        </td>
-      </tr>
-      </tfoot>
-    </table>
-
-
-
+    </div>
 <% end %>
 
 

@@ -1,52 +1,15 @@
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => {:method => :put}) do |f| %>
-    <table>
-      <tbody>
-
-      <%= devise_error_messages! %>
+    <%= devise_error_messages %>
+    <div id="form">
       <%= f.hidden_field :reset_password_token %>
-      <tr>
-        <td>
 
-          <%= f.label :password, 'Nova senha' %>
+      <%= f.label :password, 'Nova senha' %>
+      <%= f.password_field :password, :autofocus => true, class: 'form-control' %>
 
-        </td>
-      </tr>
+      <%= f.label :password_confirmation, 'Confirmação da senha' %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
 
-
-      <tr>
-        <td>
-
-          <%= f.password_field :password, :autofocus => true, class: 'form-control' %>
-
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-
-          <%= f.label :password_confirmation, 'Confirmação da senha' %>
-
-        </td>
-      </tr>
-
-
-      <tr>
-        <td>
-
-          <%= f.password_field :password_confirmation, class: 'form-control' %>
-
-        </td>
-      </tr>
-
-
-      </tbody>
-      <tfoot>
-      <tr>
-        <td colspan="2">
-          <%= render "devise/shared/links" %>
-          <%= f.submit 'Mudar senha', class: 'btn btn-default' %>
-        </td>
-      </tr>
-      </tfoot>
-    </table>
+      <%= render "devise/shared/links" %>
+      <%= f.submit 'Mudar senha', class: 'btn btn-default' %>
+    </div>
 <% end %>

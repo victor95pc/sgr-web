@@ -33,31 +33,45 @@
 
 }
 
-#content * {
+#form {
+  width: 335px;
   margin: 0 auto;
 }
 
-#content td p {
-  color: red;
+div .btn-default {
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+div #form label {
+  margin: 0px;
+}
+
+#content {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#content ul {
+  margin: 0;
 }
 
 #opcoes {
   margin-left: 20px;
-}
-
-tfoot td {
-  padding-top: 20px;
-  text-align: center;
+  width: 100%;
 }
 
 .form-control {
-  width: 305px;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
-td #registrar, td #refazer-senha, #reenviar-email {
+#registrar, #refazer-senha, #reenviar-email {
+  margin-top: 20px;
   float: right;
 }
 
-td #voltar {
+#voltar {
   float: left;
 }
