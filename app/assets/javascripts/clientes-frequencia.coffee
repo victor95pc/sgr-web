@@ -37,8 +37,6 @@ $(document).on 'page:change', ->
 
       series: [
         lineWidth: 3
-        markerOptions:
-          style: "circle"
       ]
     )
 
