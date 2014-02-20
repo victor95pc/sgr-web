@@ -8,4 +8,5 @@ victor:
   id: 1
   email: 'victor95pc@hotmail.com'
   encrypted_password: '$2a$10$ZaoyXLhTudOtUsUv4LV4B.nZ6pKV..8L80I0jyF47srVreO1hFCFu' #12345678
+  confirmed_at: <%= Time.now %>
   ativo: 1

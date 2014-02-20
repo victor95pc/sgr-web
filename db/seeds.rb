@@ -10,7 +10,7 @@
 #######################
 #### CONTA USUARIO ####
 #######################
-usuario = User.new email: 'victor95pc@hotmail.com', password: '12345678', ativo: 1
+usuario = User.new email: 'victor95pc@hotmail.com', password: '12345678', ativo: 1, confirmed_at: Time.now
 usuario.save!
 
 
