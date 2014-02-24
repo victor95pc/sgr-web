@@ -1,8 +1,7 @@
 <%= image_tag('SGRLogo.png', id: 'logoSGR') %>
 <div id="menu_superior">
 
-  <% listar_menu_superior do |nome_menus, link_menus, ativo| %>
-      <%= link_to nome_menus, link_menus, class: ativo %>
-  <% end %>
+  <%= listar_menu_superior %>
+
   <%= link_to('Sair', destroy_user_session_path, :method => :delete, id: 'sair') %>
 </div>

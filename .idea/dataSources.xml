@@ -20,9 +20,9 @@
     <data-source source="LOCAL" name="Rails SGR: production" uuid="1b395d8f-c658-4ee9-b87b-94e0b4189047">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/sgr_production</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>df9bdf98df99dfdbdfdddfcf</user-password>
+      <jdbc-url>jdbc:postgresql://ec2-54-197-241-94.compute-1.amazonaws.com:5432/d7tes4tp9nk251</jdbc-url>
+      <user-name>pcxixvrfbooytl</user-name>
+      <user-password>df9edfd9dfe5dfecdffbdfd9df99dfeedff0df99dfccdffedfdddfd8dffedfcedfefdfe9dfc0dfc1dfe2dffddfdbdfe1dfdfdfdf</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails vota_prato: development" uuid="11f0e022-1f55-4fb6-bd6d-7c5218da83ef">

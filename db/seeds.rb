@@ -33,6 +33,11 @@ guaracamp = Produto.create! numero_codigo: 00000003, nome: 'GuaraCamp', valor: 2
 #######################
 victor = Funcionario.create! nome: 'Victor Palomo', cargo: 'Dono do Mundo', salario: '1'
 
+#######################
+##### OPERADORES ######
+#######################
+operador = Operador.new funcionario: victor, usuario: 'victor95pc', senha: '12345678'
+operador.save!
 
 #######################
 ######## FALTAS #######

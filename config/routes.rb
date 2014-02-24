@@ -25,9 +25,12 @@ SGR::Application.routes.draw do
   resources :funcionarios, only: [] do
     collection do
       root to: :cadastros
-      get :ajax_cadastros_grid
-      post :ajax_cadastros_grid
+      get :operadores
       get :cadastros
+      get :ajax_cadastros_grid
+      get :ajax_operadores_grid
+      post :ajax_cadastros_grid
+      post :ajax_operadores_grid
     end
   end
 

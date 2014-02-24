@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SGR.iml" filepath="$PROJECT_DIR$/.idea/SGR.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Caelum_Rails/vota_prato/.idea/vota_prato.iml" filepath="$PROJECT_DIR$/../Caelum_Rails/vota_prato/.idea/vota_prato.iml" />
     </modules>
   </component>
 </project>

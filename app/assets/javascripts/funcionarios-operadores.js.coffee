@@ -4,40 +4,35 @@ $(document).on 'page:change', ->
   jQuery("#lista").jqGrid
     height: content_height
     width: content_width
-    url: "ajax_cadastros_grid?oper=show"
+    url: "ajax_operadores_grid?oper=show"
     datatype: "json"
-    colNames: ["Nome do Funcionário", "Cargo", "Salario", "Data de Admição"]
+    colNames: ["Nome do Operador", "Usuario", "Data do Registro"]
     colModel: [
       name: "nome"
       index: "nome"
-      width: 90
+      width: 15
       editable: true
     ,
-      name: "cargo"
-      index: "cargo"
+      name: "usuario"
+      index: "usuario"
       editable: true
-      width: 40
-    ,
-      name: "salario"
-      index: "salario"
-      editable: true
-      width: 20
+      width: 10
     ,
       name: "created_at"
       index: "created_at"
       formatter: 'date'
       editable: false
-      width: 30
+      width: 5
     ]
-    hidegrid: false
     rowNum: 12
+    hidegrid: false
     pager: "#lista_footer"
-    sortname: "nome"
+    sortname: "id"
     viewrecords: true
     sortorder: "asc"
     loadonce: false
-    caption: "Funcionários"
-    editurl: "ajax_cadastros_grid"
+    caption: "Operadores"
+    editurl: "ajax_operadores_grid"
 
   jQuery("#lista").jqGrid "navGrid", "#lista_footer", {
       edit: true
@@ -47,19 +42,16 @@ $(document).on 'page:change', ->
     },
     {
       errorTextFormat: (data) ->
-        'Erro ao editar um funcionário' if data.status == 500
+        'Erro ao editar o operador' if data.status == 500
 
-    }
-  ,
+    },
     {
       errorTextFormat: (data) ->
-        'Erro ao cadastrar um novo funcionário' if data.status == 500
+        'Erro ao cadastrar um novo operador' if data.status == 500
 
-    }
-  ,
+    },
     {
       errorTextFormat: (data) ->
-        'Erro ao deletar o funcionário' if data.status == 500
+        'Erro ao deletar o operador' if data.status == 500
 
     }
-

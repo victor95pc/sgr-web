@@ -9,7 +9,7 @@ ActiveSupport::Inflector.inflections do |inflect|
 #   inflect.irregular 'person', 'people'
 #   inflect.uncountable %w( fish sheep )
   inflect.irregular 'configuracao', 'configuracoes'
-  inflect.irregular 'configuracao', 'configuracoes'
+  inflect.irregular 'operador', 'operadores'
   inflect.irregular 'promocao', 'promocoes'
   inflect.irregular 'cartao', 'cartoes'
 end

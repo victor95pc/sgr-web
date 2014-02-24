@@ -9,15 +9,16 @@ module ApplicationHelper
         'Promoções' => promocoes_especiais_promocoes_path,
         'Configuração' => preco_configuracoes_path
     }
-
+    menus = ''
     menu_superior.each do |nome_menus, link_menus|
       if link_menus.start_with? '/'+controller_name or link_menus.start_with? controller_name
-        ativo = 'ativo'
+        menus << link_to(nome_menus, link_menus, class: 'ativo')
       else
-        ativo = nil
+        menus << link_to(nome_menus, link_menus)
       end
-      yield nome_menus, link_menus, ativo
     end
+
+    menus.html_safe
   end
 
   def listar_menu_lateral
@@ -30,7 +31,8 @@ module ApplicationHelper
 
         'funcionarios' =>
             {
-                'Cadastros' => cadastros_funcionarios_path
+                'Cadastros' => cadastros_funcionarios_path,
+                'Operadores' => operadores_funcionarios_path
             },
         'financas' =>
             {
@@ -47,15 +49,16 @@ module ApplicationHelper
                 'Sobre' => sobre_configuracoes_path,
             }
     }
-
+    menus = ''
     menu_lateral[controller_name].each do |nome_menus, link_menus|
       if request.path == link_menus
-        ativo = 'ativo'
+        menus << link_to(nome_menus, link_menus, class: 'ativo')
       else
-        ativo = nil
+        menus << link_to(nome_menus, link_menus)
       end
-      yield nome_menus, link_menus, ativo
     end
+
+    menus.html_safe
   end
 
   def devise_error_messages
