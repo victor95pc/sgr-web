@@ -51,7 +51,7 @@ class WebserviceControllerTest < ActionController::TestCase
   test 'Prepara uma JSON das comandas a pagar para o programa Desktop -- WebServicePegarDados' do
     #Sem nenhuma Comanda
     get :listar_comandas, {cartao: @numero_cartao}
-    assert_response :internal_server_error
+    assert_response 417
 
     #Adicionando uma comanda
     comanda = Comanda.new cartao: @cartao, valor: Configuracao.calcular_peso(1.5), peso: 1.5, status: 1
@@ -64,7 +64,7 @@ class WebserviceControllerTest < ActionController::TestCase
   test 'Prepara uma JSON das promocoes especiais para um cliente para o programa Desktop -- WebServicePegarDesconto' do
     #Sem nenhuma Promocao especiais
     get :listar_promocoes_especiais, {id_cliente: @cliente.id}
-    assert_response :internal_server_error
+    assert_response 417
 
     #Adicionando uma promocao especial
     promocao = Promocao.new cliente_id: @cliente.id, nome: 'teste', valor: '10'
@@ -82,7 +82,7 @@ class WebserviceControllerTest < ActionController::TestCase
   test 'Prepara uma JSON dos produtos pagos de uma comanda para o programa Desktop -- WebServicePegarProduto' do
     #Sem nenhuma comanda
     get :listar_produtos_pagos, {id_comanda: pegar_comanda(@cartao)}
-    assert_response :internal_server_error
+    assert_response 417
 
     #Adicionando uma comanda
     comanda = Comanda.new cartao: @cartao, valor: Configuracao.calcular_peso(1.5), peso: 1.5, status: 1
@@ -90,7 +90,7 @@ class WebserviceControllerTest < ActionController::TestCase
 
     #Sem nenhuma produtos na comanda
     get :listar_produtos_pagos, {id_comanda: pegar_comanda(@cartao)}
-    assert_response :internal_server_error
+    assert_response 417
 
     #Adicionando uma produtos a comanda
     produto_pago_1 = ProdutoPago.new comanda: comanda, produto: produtos(:coca), quantidade: 2
@@ -119,7 +119,7 @@ class WebserviceControllerTest < ActionController::TestCase
     get :verificar_codigo, {codigo: 00000001}
     assert_response :ok
     get :verificar_codigo, {codigo: 99999999}
-    assert_response :internal_server_error
+    assert_response 417
   end
 
   test 'Logar operador pelo nome e senha para o programa Desktop' do
@@ -127,10 +127,10 @@ class WebserviceControllerTest < ActionController::TestCase
     assert_response :ok
 
     get :logar_operador, {usuario: 'YEAH!!', senha: '12345678'}
-    assert_response :internal_server_error
+    assert_response 417
 
     get :logar_operador
-    assert_response :internal_server_error
+    assert_response 417
   end
 
   private

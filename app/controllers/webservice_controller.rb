@@ -6,10 +6,10 @@ class WebserviceController < ApplicationController
       if Configuracao.mudar_preco_kg(valor)
         render text: 'Preço Alterado com Suceso', status: 200
       else
-        render text: 'Erro ao Alterar o Preço', status: 500
+        render text: 'Erro ao Alterar o Preço', status: 417
       end
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -31,7 +31,7 @@ class WebserviceController < ApplicationController
       comanda_nova = Comanda.new peso: peso, valor: valor, cartao: cartao, status: 1
       salvar_modelo(comanda_nova, '::OK', '::ERRO')
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -46,7 +46,7 @@ class WebserviceController < ApplicationController
       cliente = Cliente.new nome: nome, cep: cep, telefone: telefone, cartao: cartao
       salvar_modelo(cliente, 'Sucesso', '::ERRO')
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -56,7 +56,7 @@ class WebserviceController < ApplicationController
       Cliente.remover_vinculo numero_cartao
       render text: 'Sucesso', status: 200
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -73,14 +73,14 @@ class WebserviceController < ApplicationController
           when 'cancelar'
             comandas.each { |comanda| comanda.status = 3 }
           else
-            render text: '::ERRO', status: 500
+            render text: '::ERRO', status: 417
         end
         comandas.each { |comanda| salvar_modelo(comanda, 'Alterado', '::ERRO') }
       else
-        render text: '::ERRO', status: 500
+        render text: '::ERRO', status: 417
       end
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -92,10 +92,10 @@ class WebserviceController < ApplicationController
       if comandas.present?
         render json: comandas, status: 200
       else
-        render text: '::ERRO', status: 500
+        render text: '::ERRO', status: 417
       end
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -107,10 +107,10 @@ class WebserviceController < ApplicationController
       if promocoes_especiais.present?
         render json: promocoes_especiais, status: 200
       else
-        render text: '::ERRO', status: 500
+        render text: '::ERRO', status: 417
       end
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -120,7 +120,7 @@ class WebserviceController < ApplicationController
     if promocoes_padrao.present?
       render json: promocoes_padrao, status: 200
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -131,10 +131,10 @@ class WebserviceController < ApplicationController
       if produtos_pagos.present?
         render json: produtos_pagos, status: 200
       else
-        render text: '::ERRO', status: 500
+        render text: '::ERRO', status: 417
       end
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -145,10 +145,10 @@ class WebserviceController < ApplicationController
       if cliente.present?
         render json: cliente, status: 200
       else
-        render text: '::ERRO', status: 500
+        render text: '::ERRO', status: 417
       end
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -160,10 +160,10 @@ class WebserviceController < ApplicationController
       if Cliente.trocar_cartao(nome, numero_cartao)
         render text: '::OK', status: 200
       else
-        render text: '::ERRO', status: 500
+        render text: '::ERRO', status: 417
       end
     else
-      render text: '::ERRO', status: 500
+      render text: '::ERRO', status: 417
     end
   end
 
@@ -175,10 +175,10 @@ class WebserviceController < ApplicationController
       if produto.present?
         render text: '::EXISTE', status: 200
       else
-        render text: '::NAO', status: 500
+        render text: '::NAO', status: 417
       end
     else
-      render text: '::NAO', status: 500
+      render text: '::NAO', status: 417
     end
   end
 
@@ -186,16 +186,15 @@ class WebserviceController < ApplicationController
     usuario = params[:usuario]
     senha = params[:senha]
 
-    binding.pry
     if verificar_paramentros usuario, senha
       operador = Operador.find_by usuario: usuario, senha: senha
       if operador.present?
         render nothing: true, status: 200
       else
-        render text: 'Usuário ou senha estão incorretos', status: 500
+        render text: 'Usuário ou senha estão incorretos', status: 417
       end
     else
-      render text: 'Campos usuário ou senha não podem ficar vazios', status: 500
+      render text: 'Campos usuário ou senha não podem ficar vazios', status: 417
     end
   end
 
@@ -214,7 +213,7 @@ class WebserviceController < ApplicationController
     if model.save!
       render text: mensagem_ok, status: 200
     else
-      render text: mensagem_error, status: 500
+      render text: mensagem_error, status: 417
     end
   end
 end
