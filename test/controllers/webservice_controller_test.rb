@@ -128,6 +128,9 @@ class WebserviceControllerTest < ActionController::TestCase
 
     get :logar_operador, {usuario: 'YEAH!!', senha: '12345678'}
     assert_response :internal_server_error
+
+    get :logar_operador
+    assert_response :internal_server_error
   end
 
   private

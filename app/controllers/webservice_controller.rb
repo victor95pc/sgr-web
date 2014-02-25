@@ -186,22 +186,28 @@ class WebserviceController < ApplicationController
     usuario = params[:usuario]
     senha = params[:senha]
 
+    binding.pry
     if verificar_paramentros usuario, senha
-      operador =Operador.find_by usuario: usuario, senha: senha
+      operador = Operador.find_by usuario: usuario, senha: senha
       if operador.present?
         render nothing: true, status: 200
       else
-        render text: 'Usuario ou senha estã incorretos', status: 500
+        render text: 'Usuário ou senha estão incorretos', status: 500
       end
     else
-      render text: 'Campos usuario ou senha não podem ficar vazios', status: 500
+      render text: 'Campos usuário ou senha não podem ficar vazios', status: 500
     end
   end
 
   private
   def verificar_paramentros(*campos)
-    campos.each { |campo| false if campo.blank? }
-    true
+    existe = true
+    campos.each do |campo|
+      if campo.blank?
+        existe = false
+      end
+    end
+    existe
   end
 
   def salvar_modelo(model, mensagem_ok, mensagem_error)
