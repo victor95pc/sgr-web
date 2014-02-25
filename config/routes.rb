@@ -79,6 +79,7 @@ SGR::Application.routes.draw do
       get :pesquisar_cliente
       get :trocar_cartao
       get :verificar_codigo
+      get :logar_operador
     end
   end
 end

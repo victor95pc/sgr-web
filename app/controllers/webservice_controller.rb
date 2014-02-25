@@ -182,6 +182,22 @@ class WebserviceController < ApplicationController
     end
   end
 
+  def logar_operador
+    usuario = params[:usuario]
+    senha = params[:senha]
+
+    if verificar_paramentros usuario, senha
+      operador =Operador.find_by usuario: usuario, senha: senha
+      if operador.present?
+        render nothing: true, status: 200
+      else
+        render text: 'Usuario ou senha estã incorretos', status: 500
+      end
+    else
+      render text: 'Campos usuario ou senha não podem ficar vazios', status: 500
+    end
+  end
+
   private
   def verificar_paramentros(*campos)
     campos.each { |campo| false if campo.blank? }

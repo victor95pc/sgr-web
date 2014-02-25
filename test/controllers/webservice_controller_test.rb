@@ -122,6 +122,14 @@ class WebserviceControllerTest < ActionController::TestCase
     assert_response :internal_server_error
   end
 
+  test 'Logar operador pelo nome e senha para o programa Desktop' do
+    get :logar_operador, {usuario: 'victor95pc', senha: '12345678'}
+    assert_response :ok
+
+    get :logar_operador, {usuario: 'YEAH!!', senha: '12345678'}
+    assert_response :internal_server_error
+  end
+
   private
   def pegar_comanda(cartao)
     comanda = Comanda.where(cartao: cartao).first
