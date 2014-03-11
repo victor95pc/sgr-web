@@ -24,6 +24,10 @@ class WebserviceControllerTest < ActionController::TestCase
   end
 
   test 'Desvincular cliente -- WebServiceDesvincularCliente' do
+    if @cartao.cliente.blank?
+      cliente = Cliente.new cartao: @cartao, nome: 'Maria', telefone: '71718585', cep: '23550371'
+      cliente.save!
+    end
     get :desvincular_cliente, {cartao: @numero_cartao}
     assert_response :ok
   end
@@ -105,9 +109,15 @@ class WebserviceControllerTest < ActionController::TestCase
   #test 'Prepara uma JSON de todos os produtos para o programa Desktop -- WebServicePegarTodosProduto' do
   #end
 
-  test 'Pesquisa um cliente pelo nome e retorna para o programa Desktop -- WebServiceProcurarCliente' do
-    get :pesquisar_cliente, {nome: @cliente.nome}
+  test 'Pesquisa um cliente pelo numero de cartao e retorna para o programa Desktop -- WebServiceProcurarCliente' do
+    get :pesquisar_cliente, {numero_cartao: @cliente.cartao.numero_cartao}
     assert_response :ok
+
+    get :pesquisar_cliente, {numero_cartao: '9999999999'}
+    assert_response 404
+
+    get :pesquisar_cliente
+    assert_response 500
   end
 
   test 'Trocar o cliente vinculado ao cartao -- WebServiceTrocarCartao' do

@@ -7,7 +7,6 @@ class Cliente < ActiveRecord::Base
   validates_presence_of :nome
 
 
-
   belongs_to :cartao
   has_many :promocoes
 
@@ -17,8 +16,13 @@ class Cliente < ActiveRecord::Base
     cliente.destroy if cliente.present?
   end
 
-  def self.pesquisar(nome)
-    self.where('nome LIKE ?', "%#{nome}%").first
+  def self.pesquisar(numero_cartao)
+    cartao = Cartao.find_by_numero_cartao numero_cartao
+    if cartao.present?
+      self.find_by cartao: cartao
+    else
+      nil
+    end
   end
 
   def self.trocar_cartao(nome, numero_cartao)
