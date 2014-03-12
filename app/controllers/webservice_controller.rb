@@ -141,9 +141,14 @@ class WebserviceController < ApplicationController
   def pesquisar_cliente
     numero_cartao = params[:numero_cartao]
     if verificar_paramentros numero_cartao
-      cliente = Cliente.pesquisar numero_cartao
-      if cliente.present?
-        render json: cliente, status: 200
+      cartao = Cartao.find_by_numero_cartao numero_cartao
+      if cartao.present?
+        cliente = Cliente.pesquisar cartao
+        if cliente.present?
+          render json: cliente, status: 200
+        else
+          render nothing: true, status: 200
+        end
       else
         render nothing: true, status: 404
       end

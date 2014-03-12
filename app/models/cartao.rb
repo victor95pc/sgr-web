@@ -5,4 +5,8 @@ class Cartao < ActiveRecord::Base
 
   has_one :cliente
   has_many :comandas
+
+  def self.existe?(numero_cartao)
+    Cartao.find_by_numero_cartao(numero_cartao).present?
+  end
 end

@@ -16,13 +16,8 @@ class Cliente < ActiveRecord::Base
     cliente.destroy if cliente.present?
   end
 
-  def self.pesquisar(numero_cartao)
-    cartao = Cartao.find_by_numero_cartao numero_cartao
-    if cartao.present?
-      self.find_by cartao: cartao
-    else
-      nil
-    end
+  def self.pesquisar(cartao)
+  self.find_by cartao: cartao
   end
 
   def self.trocar_cartao(nome, numero_cartao)

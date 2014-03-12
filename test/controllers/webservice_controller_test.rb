@@ -113,6 +113,9 @@ class WebserviceControllerTest < ActionController::TestCase
     get :pesquisar_cliente, {numero_cartao: @cliente.cartao.numero_cartao}
     assert_response :ok
 
+    get :pesquisar_cliente, {numero_cartao: '1111111115'}
+    assert_response 200
+
     get :pesquisar_cliente, {numero_cartao: '9999999999'}
     assert_response 404
 
