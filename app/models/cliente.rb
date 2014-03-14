@@ -34,11 +34,14 @@ class Cliente < ActiveRecord::Base
 
   def self.trocar_cartao(numero_cartao_antigo, numero_cartao_novo)
     cartao_antigo = Cartao.find_by numero_cartao: numero_cartao_antigo
+    cliente = nil
     cliente = self.find_by cartao: cartao_antigo if cartao_antigo.present?
     cartao_novo = Cartao.find_by numero_cartao: numero_cartao_novo
     if cartao_novo.present? and cliente.present?
       if cartao_novo.cliente.blank?
+        Comanda.where(cartao: cartao_antigo).update_all(cartao_id: cartao_novo)
         cliente.cartao = cartao_novo
+        cliente.save
         'cliente cadastrado'
       else
         'cartao em uso'
@@ -51,8 +54,9 @@ class Cliente < ActiveRecord::Base
   def self.existe?(cartao)
     cliente = self.find_by(cartao: cartao)
     if cliente.present?
-      self.find_by(cartao: cartao).attributes
+      cliente.attributes
+    else
+      nil
     end
-    nil
   end
 end
