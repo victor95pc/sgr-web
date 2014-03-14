@@ -17,17 +17,42 @@ class Cliente < ActiveRecord::Base
   end
 
   def self.pesquisar(cartao)
-  self.find_by cartao: cartao
+    cliente = existe? cartao
+    if cliente.present?
+      cliente['created_at'] = cliente['created_at'].strftime('%d/%m/%Y')
+      ultima_compra = Comanda.ultima_compra(cartao)
+      if ultima_compra.blank?
+        cliente['ultima_compra'] = 'Primeira compra'
+      else
+        cliente['ultima_compra'] = ultima_compra.created_at.strftime('%d/%m/%Y')
+      end
+      cliente
+    else
+      nil
+    end
   end
 
-  def self.trocar_cartao(nome, numero_cartao)
-    cartao = Cartao.where(numero_cartao: numero_cartao).first
-    cliente = self.where(nome: nome).first
-    if cartao.present? and cliente.present?
-      cliente.cartao = cartao
-      cliente.save
+  def self.trocar_cartao(numero_cartao_antigo, numero_cartao_novo)
+    cartao_antigo = Cartao.find_by numero_cartao: numero_cartao_antigo
+    cliente = self.find_by cartao: cartao_antigo if cartao_antigo.present?
+    cartao_novo = Cartao.find_by numero_cartao: numero_cartao_novo
+    if cartao_novo.present? and cliente.present?
+      if cartao_novo.cliente.blank?
+        cliente.cartao = cartao_novo
+        'cliente cadastrado'
+      else
+        'cartao em uso'
+      end
     else
-      return false
+      'cartao novo nao encotrado'
     end
+  end
+
+  def self.existe?(cartao)
+    cliente = self.find_by(cartao: cartao)
+    if cliente.present?
+      self.find_by(cartao: cartao).attributes
+    end
+    nil
   end
 end

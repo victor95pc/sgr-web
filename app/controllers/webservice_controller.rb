@@ -37,8 +37,8 @@ class WebserviceController < ApplicationController
 
   def vincular_cliente
     nome = params[:nome]
-    telefone = params[:nome]
-    cep = params[:nome]
+    telefone = params[:telefone]
+    cep = params[:cep]
     numero_cartao = params[:cartao]
 
     if verificar_paramentros nome, numero_cartao
@@ -158,17 +158,21 @@ class WebserviceController < ApplicationController
   end
 
   def trocar_cartao
-    nome = params[:nome]
-    numero_cartao = params[:cartao]
-
-    if verificar_paramentros nome, numero_cartao
-      if Cliente.trocar_cartao(nome, numero_cartao)
-        render text: '::OK', status: 200
-      else
-        render text: '::ERRO', status: 417
+    cartao_antigo = params[:cartao_antigo]
+    cartao_novo = params[:cartao_novo]
+    if verificar_paramentros cartao_antigo, cartao_novo
+      case Cliente.trocar_cartao(cartao_antigo, cartao_novo)
+        when 'cliente cadastrado'
+          render nothing: true, status: 200
+        when 'cartao em uso'
+          render nothing: true, status: 304
+        when 'cartao novo nao encotrado'
+          render nothing: true, status: 404
+        else
+          render nothing: true, status: 500
       end
     else
-      render text: '::ERRO', status: 417
+      render nothing: true, status: 500
     end
   end
 

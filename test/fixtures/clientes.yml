@@ -2,3 +2,8 @@ victor:
   id: 1
   nome: 'Victor'
   cartao: cartao_victor
+
+ester:
+  id: 2
+  nome: 'Ester'
+  cartao: cartao_ester

@@ -12,3 +12,6 @@ cartao_miguel:
 cartao_maria:
   id: 4
   numero_cartao: 1111111116
+
+cartao_ester:
+  numero_cartao: 1111111119

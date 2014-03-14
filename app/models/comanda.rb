@@ -16,4 +16,8 @@ class Comanda < ActiveRecord::Base
     cartao = Cartao.where(numero_cartao: numero_cartao).first
     Comanda.where(cartao: cartao, status: 1)
   end
+
+  def self.ultima_compra(cartao)
+    Comanda.order('created_at').find_by(cartao: cartao, status: 2)
+  end
 end
