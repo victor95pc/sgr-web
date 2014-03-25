@@ -72,6 +72,7 @@ SGR::Application.routes.draw do
       get :vincular_cliente
       get :desvincular_cliente
       get :mudar_status
+      get :listar_compras
       get :listar_comandas
       get :listar_promocoes_especiais
       get :listar_promocoes_padrao

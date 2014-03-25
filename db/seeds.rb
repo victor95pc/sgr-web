@@ -65,6 +65,8 @@ victor.save!
 ####### COMANDAS ######
 #######################
 comanda_victor = Comanda.create! cartao_id: cartao_do_victor.id, peso: 1.234847, valor: 150.4795, status: 2
+Comanda.create! cartao_id: cartao_do_victor.id, peso: 1.234847, valor: 150.4795, status: 1
+Comanda.create! cartao_id: cartao_do_victor.id, peso: 1.234847, valor: 150.4795, status: 1
 
 
 #######################
@@ -82,3 +84,11 @@ Promocao.create! cliente: nil, nome: 'Promoção para Todos', descricao: 'Funcio
 ProdutoPago.create! produto_id: coca.id, comanda_id: comanda_victor.id, quantidade: 4
 ProdutoPago.create! produto_id: pepsi.id, comanda_id: comanda_victor.id, quantidade: 2
 ProdutoPago.create! produto_id: guaracamp.id, comanda_id: comanda_victor.id, quantidade: 1
+
+ProdutoPago.create! produto_id: coca.id, comanda_id: 2, quantidade: 1
+ProdutoPago.create! produto_id: pepsi.id, comanda_id: 2, quantidade: 1
+ProdutoPago.create! produto_id: guaracamp.id, comanda_id: 2, quantidade: 1
+
+ProdutoPago.create! produto_id: coca.id, comanda_id: 3, quantidade: 1
+ProdutoPago.create! produto_id: pepsi.id, comanda_id: 3, quantidade: 3
+ProdutoPago.create! produto_id: guaracamp.id, comanda_id: 3, quantidade: 2

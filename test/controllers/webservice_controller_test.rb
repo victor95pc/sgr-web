@@ -36,11 +36,6 @@ class WebserviceControllerTest < ActionController::TestCase
     assert_response :ok
   end
 
-  #test 'Alterar dados da comanda -- WebServiceAlterarComanda' do
-  #  get :alterar_comanda, {cartao: @hex_cartao, valor: 21.0}
-  #  assert_response :ok
-  #end
-
   test 'Mudar Status da comanda -- WebServiceMudarStatus' do
     #Adicionando uma compra
     comanda = Comanda.new cartao: @cartao_maria, valor: Configuracao.calcular_peso(1.5), peso: 1.5, status: 1
@@ -56,49 +51,22 @@ class WebserviceControllerTest < ActionController::TestCase
     assert_response :ok
   end
 
-  test 'Prepara uma JSON das comandas a pagar para o programa Desktop -- WebServicePegarDados' do
+  test 'Prepara uma JSON de tudo que deve ser pago para o programa Desktop -- WebServicePegarProduto' do
+    #Conta a pagar
+
     #Sem nenhuma Comanda
-    get :listar_comandas, {cartao: @numero_cartao_maria}
-    assert_response 417
+    get :listar_compras, {cartao: @numero_cartao_maria}
+    assert_response 404
 
     #Adicionando uma comanda
     comanda = Comanda.new cartao: @cartao_maria, valor: Configuracao.calcular_peso(1.5), peso: 1.5, status: 1
     comanda.save!
 
-    get :listar_comandas, {cartao: @numero_cartao_maria}
+    get :listar_compras, {cartao: @numero_cartao_maria}
     assert_response :ok
-  end
 
-  test 'Prepara uma JSON das promocoes especiais para um cliente para o programa Desktop -- WebServicePegarDesconto' do
-    #Sem nenhuma Promocao especiais
-    get :listar_promocoes_especiais, {id_cliente: @cliente_victor.id}
-    assert_response 417
 
-    #Adicionando uma promocao especial
-    promocao = Promocao.new cliente_id: @cliente_victor.id, nome: 'teste', valor: '10'
-    promocao.save!
-
-    get :listar_promocoes_especiais, {id_cliente: @cliente_victor.id}
-    assert_response :ok
-  end
-
-  test 'Prepara uma JSON das promocoes padrao para todos os cliente para o programa Desktop -- WebServicePegarTodosDesconto' do
-    get :listar_promocoes_padrao
-    assert_response :ok
-  end
-
-  test 'Prepara uma JSON dos produtos pagos de uma comanda para o programa Desktop -- WebServicePegarProduto' do
-    #Sem nenhuma comanda
-    get :listar_produtos_pagos, {id_comanda: pegar_comanda(@cartao_maria)}
-    assert_response 417
-
-    #Adicionando uma comanda
-    comanda = Comanda.new cartao: @cartao_maria, valor: Configuracao.calcular_peso(1.5), peso: 1.5, status: 1
-    comanda.save!
-
-    #Sem nenhuma produtos na comanda
-    get :listar_produtos_pagos, {id_comanda: pegar_comanda(@cartao_maria)}
-    assert_response 417
+    #Produtos A Pagar
 
     #Adicionando uma produtos a comanda
     produto_pago_1 = ProdutoPago.new comanda: comanda, produto: produtos(:coca), quantidade: 2
@@ -106,12 +74,24 @@ class WebserviceControllerTest < ActionController::TestCase
     produto_pago_2 = ProdutoPago.new comanda: comanda, produto: produtos(:pepsi), quantidade: 1
     produto_pago_2.save!
 
-    get :listar_produtos_pagos, {id_comanda: pegar_comanda(@cartao_maria)}
+    get :listar_compras, {cartao: @numero_cartao_maria}
     assert_response :ok
-  end
 
-  #test 'Prepara uma JSON de todos os produtos para o programa Desktop -- WebServicePegarTodosProduto' do
-  #end
+
+    #Promocoes
+
+    #Promocoes Padrao
+    get :listar_compras, {cartao: @numero_cartao_maria}
+    assert_response :ok
+
+    #Adicionando uma promocao especial
+    promocao = Promocao.new cliente_id: @cliente_victor.id, nome: 'teste', valor: '10'
+    promocao.save!
+
+    get :listar_compras, {cartao: @numero_cartao_maria}
+    assert_response :ok
+
+  end
 
   test 'Pesquisa um cliente pelo numero de cartao e retorna para o programa Desktop -- WebServiceProcurarCliente' do
     get :pesquisar_cliente, {numero_cartao: @cliente_victor.cartao.numero_cartao}
@@ -131,7 +111,7 @@ class WebserviceControllerTest < ActionController::TestCase
     get :trocar_cartao, {cartao_antigo: @cliente_victor.cartao.numero_cartao, cartao_novo: @numero_cartao_maria}
     assert_response 200
 
-    get :trocar_cartao, {cartao_antigo: @cliente_ester.cartao.numero_cartao, cartao_novo: @cliente_victor.cartao.numero_cartao}
+    get :trocar_cartao, {cartao_antigo: @numero_cartao_maria, cartao_novo: @cliente_ester.cartao.numero_cartao}
     assert_response 304
 
     get :trocar_cartao, {cartao_antigo: @numero_cartao_maria}

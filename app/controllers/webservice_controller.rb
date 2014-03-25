@@ -84,6 +84,20 @@ class WebserviceController < ApplicationController
     end
   end
 
+  def listar_compras
+    numero_cartao = params[:cartao]
+    if verificar_paramentros numero_cartao
+      compras = Comanda.compras numero_cartao
+      if compras.present?
+        render json: compras, status: 200
+      else
+        render json: compras, status: 404
+      end
+    else
+      render nothing: true, status: 400
+    end
+  end
+
   def listar_comandas
     numero_cartao = params[:cartao]
     if verificar_paramentros numero_cartao

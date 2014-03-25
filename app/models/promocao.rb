@@ -5,6 +5,10 @@ class Promocao < ActiveRecord::Base
 
   belongs_to :cliente
 
+  def self.promocoes(id_cliente)
+    promocoes_especias(id_cliente) + promocoes_padrao
+  end
+
   def self.promocoes_especias(id_cliente)
     Promocao.where cliente_id: id_cliente
   end
