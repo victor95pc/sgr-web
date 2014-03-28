@@ -16,7 +16,7 @@ class Comanda < ActiveRecord::Base
     compras = Hash.new
 
     contas = comanda_a_pagar numero_cartao
-    produtos = ProdutoPago.where comanda_id: contas
+    produtos = ProdutoPago.pegar_produtos(contas)
 
     compras[:contas] = contas unless contas.empty?
 
