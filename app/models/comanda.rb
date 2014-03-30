@@ -1,3 +1,4 @@
+#encoding: utf-8
 class Comanda < ActiveRecord::Base
 
   validates_presence_of :cartao_id
@@ -18,20 +19,28 @@ class Comanda < ActiveRecord::Base
     contas = comanda_a_pagar numero_cartao
     produtos = ProdutoPago.pegar_produtos(contas)
 
-    compras[:contas] = contas unless contas.empty?
+    compras[:contas] = contas if contas.present?
 
     if contas.present?
-      descontos = Promocao.promocoes compras[:contas].first.cartao.cliente
+      promocoes = Promocao.promocoes compras[:contas].first.cartao.cliente
+      descontos = Array.new
+
+      promocoes.each do |desconto|
+        desconto = desconto.attributes
+        desconto['tipo'] = desconto['cliente_id'].nil? ? 'Padrão' : 'Especial'
+        descontos << desconto
+      end
+
       compras[:descontos] = descontos
-      compras[:produtos] = produtos unless produtos.empty?
+      compras[:produtos] = produtos if produtos.present?
     end
 
     compras
   end
 
   def self.comanda_a_pagar(numero_cartao)
-    cartao = Cartao.where(numero_cartao: numero_cartao).first
-    Comanda.where(cartao: cartao, status: 1)
+    cartao = Cartao.find_by numero_cartao: numero_cartao
+    Comanda.where(cartao: cartao, status: 1) if cartao.present?
   end
 
   def self.ultima_compra(cartao)

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb15cf55-4180-4b4a-8a5a-72af1fdc6132" name="Default" comment="Refatoração dos testes, mundaças na maneira que ele trata o metodo trocar_cartao agora ele verificará se o cartao possui um &quot;dono&quot; caso ele tenha nao efetuara trocas(Obrigado testes)">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SGR.iml" afterPath="$PROJECT_DIR$/.idea/SGR.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/comanda.rb" afterPath="$PROJECT_DIR$/app/models/comanda.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/promocao.rb" afterPath="$PROJECT_DIR$/app/models/promocao.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/webservice_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/webservice_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/webservice_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/webservice_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SGR.iws" />
@@ -36,7 +35,7 @@
       <file leaf-file-name="webservice_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/webservice_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="0" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0" vertical-offset="1272" max-vertical-offset="4446">
+            <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4446">
               <folding />
             </state>
           </provider>
@@ -45,7 +44,7 @@
       <file leaf-file-name="promocao.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/promocao.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="22" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="450">
+            <state line="11" column="22" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -78,19 +77,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comanda.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="comanda.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/comanda.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="828">
+            <state line="34" column="48" selection-start="963" selection-end="963" vertical-scroll-proportion="0.62198955" vertical-offset="18" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webservice_controller_test.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="produto_pago.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/produto_pago.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="11" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webservice_controller_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/controllers/webservice_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="5" selection-start="4082" selection-end="4082" vertical-scroll-proportion="0.43669987" vertical-offset="1925" max-vertical-offset="3024">
+            <state line="15" column="31" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3024">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="63" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1656">
               <folding />
             </state>
           </provider>
@@ -109,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/locales/devise.pt-BR.yml" />
         <option value="$PROJECT_DIR$/db/migrate/20140207140336_devise_create_users.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/login.css.scss" />
@@ -156,18 +172,18 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/models/promocao.rb" />
-        <option value="$PROJECT_DIR$/app/models/comanda.rb" />
         <option value="$PROJECT_DIR$/app/models/cliente.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/webservice_controller.rb" />
         <option value="$PROJECT_DIR$/test/controllers/webservice_controller_test.rb" />
+        <option value="$PROJECT_DIR$/app/models/produto_pago.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/webservice_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/comanda.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="-4" />
-    <option name="width" value="1154" />
-    <option name="height" value="869" />
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -214,6 +230,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -418,7 +435,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -606,11 +622,17 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Rails.Development: SGR" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Production: SGR" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec: SGR" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test: SGR" />
+    <list size="10">
+      <item index="0" class="java.lang.String" itemvalue="Rails.Development: vota_prato" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Production: vota_prato" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.spec: vota_prato" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.test: vota_prato" />
+      <item index="6" class="java.lang.String" itemvalue="Rails.Development: SGR" />
+      <item index="7" class="java.lang.String" itemvalue="Rails.Production: SGR" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.spec: SGR" />
+      <item index="9" class="java.lang.String" itemvalue="Rake.test: SGR" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -873,11 +895,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1154" height="869" extended-state="6" />
+    <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28274968" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30470163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1465629" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814527" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -966,6 +988,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/controllers/webservice_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="5" selection-start="4082" selection-end="4082" vertical-scroll-proportion="0.0" vertical-offset="1925" max-vertical-offset="3024">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/configuracoes_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522" />
@@ -1136,11 +1165,6 @@
         <state line="33" column="0" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="1728" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/production.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="42" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="828" />
@@ -1185,31 +1209,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/produto_pago.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="55" selection-start="916" selection-end="916" vertical-scroll-proportion="0.4623044" vertical-offset="143" max-vertical-offset="1782" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="26" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.59032714" vertical-offset="935" max-vertical-offset="1656" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/promocao.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comanda.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="828">
+        <state line="11" column="22" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
@@ -1221,16 +1228,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/webservice_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0" vertical-offset="1272" max-vertical-offset="4446">
+        <state line="43" column="63" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1656">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/controllers/webservice_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="5" selection-start="4082" selection-end="4082" vertical-scroll-proportion="0.43669987" vertical-offset="1925" max-vertical-offset="3024">
+        <state line="15" column="31" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3024">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/produto_pago.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="11" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/webservice_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comanda.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="48" selection-start="963" selection-end="963" vertical-scroll-proportion="0.62198955" vertical-offset="18" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
