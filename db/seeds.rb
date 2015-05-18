@@ -42,7 +42,7 @@ operador.save!
 #######################
 ######## FALTAS #######
 #######################
-Falta.create! funcionario_id: victor.id, motivo: 'O mundo não estava pronto!', data_falta: '11/09/1995'
+Falta.create! funcionario_id: victor.id, motivo: 'O mundo não estava pronto!', data_falta: DateTime.new(1995,9,11)
 
 
 #######################

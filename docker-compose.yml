@@ -1,0 +1,19 @@
+db:
+  image: postgres:9.3
+  ports:
+    - "5432"
+  environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=FrEthapecad4
+web:
+  build: .
+  #command: 'export RAILS_ENV=production'
+  volumes:
+    - .:/home/app/sgr
+  ports:
+    - "80:80"
+  links:
+    - db
+  environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=FrEthapecad4
