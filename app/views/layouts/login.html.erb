@@ -2,9 +2,8 @@
 <html>
 <head>
   <title>SGR - Login</title>
-  <%= stylesheet_link_tag 'fundo' %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag 'login', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -12,7 +11,7 @@
   <%= image_tag 'SGRLogo.png' %>
 </div>
 
-<div id="content">
+<div id="content_login">
   <%= yield %>
 </div>
 

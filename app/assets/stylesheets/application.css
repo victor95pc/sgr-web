@@ -12,6 +12,7 @@
  *= require jqrid/css/ui.jqgrid
  *= require jqplot/jquery.jqplot
  *= require bootstrap
-
+ *= require_self
+ *= require_tree .
  */
 
